@@ -13,9 +13,24 @@ json_path = os.path.abspath(os.path.join(current_path, "../palette/%s.json" % (p
 
 
 color_html = etree.parse(xml_path)
-palette_html = color_html.xpath('//*[@id="colors"]/li')
+palette_html = color_html.xpath('//*[@id="colors"]/*')
+color_list = {
+    'color': []
+}
 for i in palette_html:
-    name = i.xpath('//span[1]')[0].text
-    hex_str = i.xpath('//span[3]')[0].text
-    print(name)
-    print(hex_str)
+    color = etree.HTML(etree.tostring(i))
+    name = (color.xpath('//span[1]')[0].text)
+    hex_str = (color.xpath('//span[3]')[0].text)
+    r, g, b = to_int(hex_str)
+    color_list['color'].append(
+        {
+            'name': name,
+            'r': r,
+            'g': g,
+            'b': b,
+        }
+    )
+
+with open(json_path, 'w', encoding = 'utf-8') as json_file:
+    json.dump(color_list, json_file, ensure_ascii = False)
+json_file.close()
