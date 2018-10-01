@@ -14,9 +14,14 @@ enum Palette: String {
     //    case additionColors = "addition_colors"
 }
 
-enum points: Int {
+enum Points: Int {
     case mainName = 36
     case aliasName = 24
     case numbers = 20
     case copyrightText = 14
+}
+
+enum ExpTypes {
+    case RGB
+    case CMYK
 }

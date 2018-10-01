@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Cocoa
 
 class Color {
     
@@ -27,24 +28,54 @@ class Color {
         self.black = k
     }
     
+    
+    
     var name: String?
     var aliasName: String?
     
-    var red: Int?
-    var green: Int?
-    var blue: Int?
+    var red: Int = 0
+    var green: Int = 0
+    var blue: Int = 0
     
-    var cyan: Int?
-    var magenta: Int?
-    var yellow: Int?
-    var black: Int?
+    var cyan: Int = 0
+    var magenta: Int = 0
+    var yellow: Int = 0
+    var black: Int = 0
+    
+
     
     func getHexString() -> String {
-        return "#" + intToHex(self.red!) + intToHex(self.green!) + intToHex(self.blue!)
+        return "#" + intToHex(self.red) + intToHex(self.green) + intToHex(self.blue)
     }
     
     func getHSLDisplay() -> [Double] {
-        return rgbToHsl([red!, green!, blue!])
+        return rgbToHsl([red, green, blue])
+    }
+    
+    func getNSColor() -> NSColor {
+        return NSColor(calibratedRed: CGFloat(self.red) / 255.0,
+                       green: CGFloat(self.green) / 255.0,
+                       blue: CGFloat(self.blue) / 255.0,
+                       alpha: 1.0)
+    }
+    
+    func getTextColor() -> NSColor {
+        let grayIndex =
+            0.212671 * Double(self.red) +
+            0.715160 * Double(self.green) +
+            0.072169 * Double(self.blue)
+        if grayIndex > 127 {
+            return NSColor(calibratedWhite: 0.0, alpha: 1.0)
+        } else {
+            return NSColor(calibratedWhite: 1.0, alpha: 1.0)
+        }
+    }
+    
+    func getTitleImage(width: Int, height: Int) -> NSImage {
+        let deepColor = NSColor(calibratedRed: suitableColor(self.red),
+                       green: suitableColor(self.green),
+                       blue: suitableColor(self.blue),
+                       alpha: 1.0)
+        return NSImage(color: deepColor, size: NSSize(width: width, height: height))
     }
 }
-

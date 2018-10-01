@@ -29,5 +29,3 @@ func loadResources(_ palette: Palette) -> [Color] {
     }
     return []
 }
-
-

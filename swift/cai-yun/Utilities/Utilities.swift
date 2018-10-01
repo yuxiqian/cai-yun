@@ -7,7 +7,15 @@
 //
 
 import Foundation
+import Cocoa
 
+func getRandom(_ min: Int, _ max: Int) -> Int {
+    return min + Int(arc4random_uniform(UInt32(max - min + 1)))
+}
+
+func getFont(_ points: Points) -> NSFont? {
+    return NSFont(name: "SourceHanSerifCN-Light", size: CGFloat(points.rawValue))
+}
 
 func intToHex(_ i: Int) -> String {
     return String(format:"%02x", i)
@@ -20,6 +28,21 @@ func Min(_ i: Double, _ j: Double) -> Double {
 func Max(_ i: Double, _ j: Double) -> Double {
     return i > j ? i : j
 }
+
+func suitableColor(_ int: Int) -> CGFloat {
+    if #available(OSX 10.14, *) {
+        let appear = NSApplication.shared.effectiveAppearance
+        if appear.name == .aqua {
+            return (pow(CGFloat(int) / 255.0, 2.0) * 0.5 + 0.5)
+        } else {
+            return (pow(CGFloat(int) / 255.0, 2.0) * 0.5)
+        }
+    } else {
+        return (pow(CGFloat(int) / 255.0, 2.0) * 0.5 + 0.5)
+    }
+}
+
+
 
 func rgbToHsl(_ i: [Int]) -> [Double] {
     
@@ -59,4 +82,26 @@ func rgbToHsl(_ i: [Int]) -> [Double] {
         }
     }
     return [round(H * 360), round(S * 1000) / 10.0, round(L * 1000) / 10.0]
+}
+
+func fixSpelling(_ str: String?) -> String {
+    if str == nil {
+        return "__ALIAS_NAME__"
+    }
+    let result = str!.uppercased().prefix(1) + str!.suffix(str!.count - 1)
+    return result.replacingOccurrences(of: "v", with: "yu")
+}
+
+
+
+extension NSImage {
+    convenience init(color: NSColor, size: NSSize) {
+        self.init(size: size)
+        lockFocus()
+        color.drawSwatch(in: NSRect(origin: .zero, size: size))
+        self.draw(in: NSRect(origin: .zero, size: size),
+                  from: NSRect(origin: .zero, size: self.size),
+                  operation: .color, fraction: 1)
+        unlockFocus()
+    }
 }

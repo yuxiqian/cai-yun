@@ -7,6 +7,6 @@ target 'cai-yun' do
 
   # Pods for cai-yun
 
-  pod 'SwiftyJSON'
+  pod 'SwiftyJSON', "4.2.0"
 
 end
