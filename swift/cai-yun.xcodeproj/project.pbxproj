@@ -16,6 +16,8 @@
 		8A94EF402161B8B000BE4355 /* SourceHanSerifCN-Light.otf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A94EF3F2161B8B000BE4355 /* SourceHanSerifCN-Light.otf */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8A94EF432161B8C900BE4355 /* nippon_colors.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A94EF412161B8C900BE4355 /* nippon_colors.json */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8A94EF442161B8C900BE4355 /* chinese_colors.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A94EF422161B8C900BE4355 /* chinese_colors.json */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8A9662402161E3E2005B5995 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A96623F2161E3E2005B5995 /* Utilities.swift */; };
+		8A9662432161E882005B5995 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9662422161E882005B5995 /* Constants.swift */; };
 		ADB946E89714F2431AEA5EC4 /* Pods_cai_yun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CBBB71A072EA54C18DE9DF /* Pods_cai_yun.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		8A94EF3F2161B8B000BE4355 /* SourceHanSerifCN-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceHanSerifCN-Light.otf"; path = "../font/SourceHanSerifCN-Light.otf"; sourceTree = "<group>"; };
 		8A94EF412161B8C900BE4355 /* nippon_colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = nippon_colors.json; path = ../palette/nippon_colors.json; sourceTree = "<group>"; };
 		8A94EF422161B8C900BE4355 /* chinese_colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = chinese_colors.json; path = ../palette/chinese_colors.json; sourceTree = "<group>"; };
+		8A96623F2161E3E2005B5995 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		8A9662422161E882005B5995 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B8CBBB71A072EA54C18DE9DF /* Pods_cai_yun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cai_yun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -102,6 +106,7 @@
 				8A5781B121610BBE005BABE1 /* Assets.xcassets */,
 				8A929AA02161C8C900179F65 /* Palette */,
 				8A929A9F2161C8BC00179F65 /* Storyboards */,
+				8A9662412161E86B005B5995 /* Utilities */,
 				8A929A9E2161C8AE00179F65 /* VIewController */,
 				8A5781AD21610BBD005BABE1 /* AppDelegate.swift */,
 			);
@@ -131,6 +136,15 @@
 				8A929A9A2161C78B00179F65 /* ResourceReader.swift */,
 			);
 			path = Palette;
+			sourceTree = "<group>";
+		};
+		8A9662412161E86B005B5995 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8A96623F2161E3E2005B5995 /* Utilities.swift */,
+				8A9662422161E882005B5995 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		D126BC9308B1364D1A49119A /* Frameworks */ = {
@@ -272,7 +286,9 @@
 				8A929A9B2161C78B00179F65 /* ResourceReader.swift in Sources */,
 				8A929A9D2161C8AA00179F65 /* Color.swift in Sources */,
 				8A5781B021610BBD005BABE1 /* MainViewController.swift in Sources */,
+				8A9662402161E3E2005B5995 /* Utilities.swift in Sources */,
 				8A5781AE21610BBD005BABE1 /* AppDelegate.swift in Sources */,
+				8A9662432161E882005B5995 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

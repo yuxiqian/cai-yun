@@ -13,6 +13,11 @@ class Color:
     green_int = 0
     blue_int = 0
 
+    cyan_int = 0
+    magenta_int = 0
+    yellow_int = 0
+    black_int = 0
+
     def __init__(self, name, hex_str):
         self.name = name
         self.red_int = int(hex_str[0:2], 16)
@@ -25,6 +30,13 @@ class Color:
         self.red_int = int(hex_str[0:2], 16)
         self.green_int = int(hex_str[2:4], 16)
         self.blue_int = int(hex_str[4:6], 16)
+
+    def setCMYK(self, c, m, y, k):
+        self.cyan_int = c
+        self.magenta_int = m
+        self.yellow_int = y
+        self.black_int = k
+        
     #
     # def __init__(self, name, r, g, b):
     #     self.name = name

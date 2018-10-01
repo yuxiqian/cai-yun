@@ -14,9 +14,10 @@ class MainViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let font = NSFont(name: "SourceHanSerifCN-Light", size: CGFloat(24))
-        self.labelDemp.font = font
         // Do any additional setup after loading the view.
-        loadResources(Palette.chineseColors)
+        let chinese = loadResources(Palette.chineseColors)
+        let nippon = loadResources(Palette.nipponColors)
+
     }
 
     override var representedObject: Any? {
@@ -24,8 +25,4 @@ class MainViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
-    @IBOutlet weak var labelDemp: NSTextField!
-
 }
-
