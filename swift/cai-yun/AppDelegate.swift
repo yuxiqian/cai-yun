@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  cai-yun
 //
-//  Created by 法好 on 2018/9/30.
+//  Created by yuxiqian on 2018/9/30.
 //  Copyright © 2018 yuxiqian. All rights reserved.
 //
 

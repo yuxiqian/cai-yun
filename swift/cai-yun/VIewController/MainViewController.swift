@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  cai-yun
 //
 //  Created by yuxiqian on 2018/9/30.
@@ -7,13 +7,16 @@
 //
 
 import Cocoa
+import SwiftyJSON
 
-class ViewController: NSViewController {
+class MainViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let font = NSFont(name: "SourceHanSerifCN-Light", size: CGFloat(24))
+        self.labelDemp.font = font
         // Do any additional setup after loading the view.
+        loadResources(Palette.chineseColors)
     }
 
     override var representedObject: Any? {
@@ -22,6 +25,7 @@ class ViewController: NSViewController {
         }
     }
 
+    @IBOutlet weak var labelDemp: NSTextField!
 
 }
 
