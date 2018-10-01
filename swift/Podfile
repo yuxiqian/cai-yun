@@ -1,0 +1,12 @@
+
+platform :macos, '10.12'
+
+target 'cai-yun' do
+
+  use_frameworks!
+
+  # Pods for cai-yun
+
+  pod 'SwiftyJSON'
+
+end
