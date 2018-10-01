@@ -16,7 +16,7 @@ class MainViewController: NSViewController {
     var currentPalette: [Color] = []
     var currentColor: Color?
     var isNextTap = false
-    var isRGBAndNotCMYK = true
+    var isRGBAndNotCMYK = false
     
     override func viewDidLoad() {
         
@@ -73,6 +73,7 @@ class MainViewController: NSViewController {
         palettes[Palette.nipponColors.rawValue] = nippon
         
         switchPalette()
+        
     }
     
     func switchPalette() {
@@ -87,8 +88,14 @@ class MainViewController: NSViewController {
         isRGBAndNotCMYK = !isRGBAndNotCMYK
         if isRGBAndNotCMYK {
             ringOne.isHidden = true
+            ringTwo.maxValue = 255
+            ringThree.maxValue = 255
+            ringFour.maxValue = 255
         } else {
             ringOne.isHidden = false
+            ringTwo.maxValue = 100
+            ringThree.maxValue = 100
+            ringFour.maxValue = 100
         }
     }
     
@@ -105,8 +112,35 @@ class MainViewController: NSViewController {
             self.aliasNameTitle.stringValue = fixSpelling(self.currentColor!.aliasName)
             self.aliasNameTitle.textColor = self.currentColor!.getTextColor()
             
+            if isRGBAndNotCMYK {
+                // RGB Mode
+//                self.ringTwo.doubleValue = Double((self.currentColor?.red)!)
+//                self.ringThree.doubleValue = Double((self.currentColor?.green)!)
+//                self.ringFour.doubleValue = Double((self.currentColor?.blue)!)
+                
+                
+                self.ringTwo.animate(toDoubleValueA: Double((self.currentColor?.red)!))
+                self.ringThree.animate(toDoubleValueB: Double((self.currentColor?.green)!))
+                self.ringFour.animate(toDoubleValueC: Double((self.currentColor?.blue)!))
+//
+
+            } else {
+////                // CMYK Mode
+//                self.ringOne.doubleValue = Double((self.currentColor?.cyan)!)
+//                self.ringTwo.doubleValue = Double((self.currentColor?.red)!)
+//                self.ringThree.doubleValue = Double((self.currentColor?.yellow)!)
+//                self.ringFour.doubleValue = Double((self.currentColor?.black)!)
+                
+
+                self.ringOne.animate(toDoubleValueA: Double((self.currentColor?.cyan)!))
+                self.ringTwo.animate(toDoubleValueB: Double((self.currentColor?.magenta)!))
+                self.ringThree.animate(toDoubleValueC: Double((self.currentColor?.yellow)!))
+                self.ringFour.animate(toDoubleValueD: Double((self.currentColor?.black)!))
+            }
+            
             self.view.window?.backgroundColor = self.currentColor!.getNSColor()
-            self.titleShadowBar.image = self.currentColor!.getTitleImage(width: Int(self.view.frame.width), height: 20)
+            self.titleShadowBar.image = self.currentColor!.getTitleImage(width: Int(self.view.frame.width), height: 21)
+            
         }
     }
     
@@ -125,4 +159,6 @@ class MainViewController: NSViewController {
         }
         setColorDisplay()
     }
+    
+
 }

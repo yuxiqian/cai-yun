@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8A1F0204216224410015650F /* PercengCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F0203216224410015650F /* PercengCalculator.swift */; };
-		8A1F0206216224EF0015650F /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F0205216224EF0015650F /* Animator.swift */; };
+		8A1F0211216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F0210216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.m */; };
 		8A5781AE21610BBD005BABE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5781AD21610BBD005BABE1 /* AppDelegate.swift */; };
 		8A5781B021610BBD005BABE1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5781AF21610BBD005BABE1 /* MainViewController.swift */; };
 		8A5781B221610BBE005BABE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A5781B121610BBE005BABE1 /* Assets.xcassets */; };
@@ -42,7 +42,9 @@
 		0C31AD5918A42992EDE10097 /* Pods-cai-yun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cai-yun.release.xcconfig"; path = "Pods/Target Support Files/Pods-cai-yun/Pods-cai-yun.release.xcconfig"; sourceTree = "<group>"; };
 		3F02EF200F5924A7949076B1 /* Pods-cai-yun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cai-yun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cai-yun/Pods-cai-yun.debug.xcconfig"; sourceTree = "<group>"; };
 		8A1F0203216224410015650F /* PercengCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercengCalculator.swift; sourceTree = "<group>"; };
-		8A1F0205216224EF0015650F /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		8A1F020B21624C540015650F /* cai-yun-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cai-yun-Bridging-Header.h"; sourceTree = "<group>"; };
+		8A1F020F216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSProgressIndicator+ESSProgressIndicatorCategory.h"; path = "../../../../../../Downloads/NSProgressIndicator-ESSProgressIndicatorCategory-master/ESSProgressBarTest/ESSProgressBarTest/NSProgressIndicator+ESSProgressIndicatorCategory.h"; sourceTree = "<group>"; };
+		8A1F0210216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSProgressIndicator+ESSProgressIndicatorCategory.m"; path = "../../../../../../Downloads/NSProgressIndicator-ESSProgressIndicatorCategory-master/ESSProgressBarTest/ESSProgressBarTest/NSProgressIndicator+ESSProgressIndicatorCategory.m"; sourceTree = "<group>"; };
 		8A5781AA21610BBD005BABE1 /* cai-yun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cai-yun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5781AD21610BBD005BABE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A5781AF21610BBD005BABE1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -81,10 +83,12 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		8A1F0207216224F30015650F /* Animator */ = {
+		8A1F020A21624C400015650F /* Animator */ = {
 			isa = PBXGroup;
 			children = (
-				8A1F0205216224EF0015650F /* Animator.swift */,
+				8A1F020F216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.h */,
+				8A1F0210216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.m */,
+				8A1F020B21624C540015650F /* cai-yun-Bridging-Header.h */,
 			);
 			path = Animator;
 			sourceTree = "<group>";
@@ -116,8 +120,8 @@
 				8A929AA12161C9DB00179F65 /* cai-yun.entitlements */,
 				8A5781B621610BBE005BABE1 /* Info.plist */,
 				8A5781B121610BBE005BABE1 /* Assets.xcassets */,
+				8A1F020A21624C400015650F /* Animator */,
 				8A929A9F2161C8BC00179F65 /* Storyboards */,
-				8A1F0207216224F30015650F /* Animator */,
 				8A929AA02161C8C900179F65 /* Palette */,
 				8A9662412161E86B005B5995 /* Utilities */,
 				8A929A9E2161C8AE00179F65 /* VIewController */,
@@ -204,6 +208,7 @@
 				TargetAttributes = {
 					8A5781A921610BBD005BABE1 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
 								enabled = 0;
@@ -301,8 +306,8 @@
 				8A1F0204216224410015650F /* PercengCalculator.swift in Sources */,
 				8A929A9D2161C8AA00179F65 /* Color.swift in Sources */,
 				8A5781B021610BBD005BABE1 /* MainViewController.swift in Sources */,
-				8A1F0206216224EF0015650F /* Animator.swift in Sources */,
 				8A9662402161E3E2005B5995 /* Utilities.swift in Sources */,
+				8A1F0211216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.m in Sources */,
 				8A5781AE21610BBD005BABE1 /* AppDelegate.swift in Sources */,
 				8A9662432161E882005B5995 /* Constants.swift in Sources */,
 			);
@@ -442,6 +447,7 @@
 			baseConfigurationReference = 3F02EF200F5924A7949076B1 /* Pods-cai-yun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "cai-yun/cai-yun.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -456,6 +462,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "yuxiqian.cai-yun";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "cai-yun/Animator/cai-yun-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -465,6 +473,7 @@
 			baseConfigurationReference = 0C31AD5918A42992EDE10097 /* Pods-cai-yun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "cai-yun/cai-yun.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -479,6 +488,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "yuxiqian.cai-yun";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "cai-yun/Animator/cai-yun-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;

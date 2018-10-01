@@ -71,6 +71,13 @@ class Color {
         }
     }
     
+    func getAccentColor() -> NSColor {
+        return NSColor(calibratedRed: suitableColor(self.red),
+                       green: suitableColor(self.green),
+                       blue: suitableColor(self.blue),
+                       alpha: 1.0)
+    }
+    
     func getTitleImage(width: Int, height: Int) -> NSImage {
         let deepColor = NSColor(calibratedRed: suitableColor(self.red),
                        green: suitableColor(self.green),
