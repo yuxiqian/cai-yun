@@ -1,3 +1,8 @@
+# chinese_colors.py
+#
+# Copyright (c) 2018 yuxiqian. all rights reserved.
+
+
 import json
 import os
 from color import *
@@ -5,7 +10,7 @@ from lxml import etree
 
 # target_url = "http://zhongguose.com/"
 
-palette_name = "中国色"
+palette_name = "chinese_colors"
 
 current_path = os.path.dirname(os.path.abspath(__file__))
 xml_path = os.path.abspath(os.path.join(current_path, "./%s.xml" % (palette_name)))
