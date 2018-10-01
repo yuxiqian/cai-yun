@@ -37,10 +37,10 @@ class MainViewController: NSViewController {
         moreMenu.addItem(withTitle: "致谢", action: #selector(showAcknowledgements(_:)), keyEquivalent: "a")
         moreButton.menu = moreMenu
         
+        setFont()
         
         loadPalette()
-        setFont()
-        shuffleNextColor()
+        
     }
 
     override var representedObject: Any? {
@@ -116,8 +116,9 @@ class MainViewController: NSViewController {
         
         switchPalette(Palette.chineseColors)
         
-        switchColorDisplay(NSMenuItem())
         switchToChineseColors(NSMenuItem())
+        switchColorDisplay(NSMenuItem())
+        
     }
     
     func switchPalette(_ palette: Palette) {
@@ -155,12 +156,17 @@ class MainViewController: NSViewController {
     }
     
     @objc func switchColorDisplay(_ sender: NSMenuItem) {
+        
         isRGBAndNotCMYK = !isRGBAndNotCMYK
         if isRGBAndNotCMYK {
             ringOne.isHidden = true
             ringTwo.maxValue = 255
             ringThree.maxValue = 255
             ringFour.maxValue = 255
+            
+            ringTwo.doubleValue *= 2.55
+            ringThree.doubleValue *= 2.55
+            ringFour.doubleValue *= 2.55
             
             moreMenu.item(withTitle: "改用 RGB 表示")?.title = "改用 CMYK 表示"
             
@@ -178,6 +184,11 @@ class MainViewController: NSViewController {
             ringThree.maxValue = 100
             ringFour.maxValue = 100
             
+            ringOne.doubleValue = 0.0
+            ringTwo.doubleValue *= 0.392
+            ringThree.doubleValue *= 0.392
+            ringFour.doubleValue *= 0.392
+            
             moreMenu.item(withTitle: "改用 CMYK 表示")?.title = "改用 RGB 表示"
             
             CLabel.isHidden = false
@@ -188,6 +199,7 @@ class MainViewController: NSViewController {
             GLabel.isHidden = true
             BLabel.isHidden = true
         }
+        setColorDisplay()
         self.isNextTap = false
     }
     
@@ -198,11 +210,35 @@ class MainViewController: NSViewController {
     
     func setColorDisplay() {
         if self.currentColor != nil {
+            
+            let textColor: NSColor = self.currentColor!.getTextColor()
             self.mainNameTitle.stringValue = self.currentColor!.name ?? "__COLOR_NAME__"
-            self.mainNameTitle.textColor = self.currentColor!.getTextColor()
+            self.mainNameTitle.textColor = textColor
             
             self.aliasNameTitle.stringValue = fixSpelling(self.currentColor!.aliasName)
-            self.aliasNameTitle.textColor = self.currentColor!.getTextColor()
+            self.aliasNameTitle.textColor = textColor
+            
+            self.RLabel.textColor = textColor
+            self.GLabel.textColor = textColor
+            self.BLabel.textColor = textColor
+            self.CLabel.textColor = textColor
+            self.MLabel.textColor = textColor
+            self.YLabel.textColor = textColor
+            self.KLabel.textColor = textColor
+            
+            if #available(OSX 10.14, *) {
+                if self.currentColor!.shouldShowDark() {
+                    self.ringOne.appearance = NSAppearance(named: .darkAqua)
+                    self.ringTwo.appearance = NSAppearance(named: .darkAqua)
+                    self.ringThree.appearance = NSAppearance(named: .darkAqua)
+                    self.ringFour.appearance = NSAppearance(named: .darkAqua)
+                } else {
+                    self.ringOne.appearance = NSAppearance(named: .aqua)
+                    self.ringTwo.appearance = NSAppearance(named: .aqua)
+                    self.ringThree.appearance = NSAppearance(named: .aqua)
+                    self.ringFour.appearance = NSAppearance(named: .aqua)
+                }
+            }
             
             if isRGBAndNotCMYK {
                 // RGB Mode
@@ -215,6 +251,10 @@ class MainViewController: NSViewController {
                 self.ringThree.animate(toDoubleValueB: Double((self.currentColor?.green)!))
                 self.ringFour.animate(toDoubleValueC: Double((self.currentColor?.blue)!))
 //
+                self.ringOne.toolTip = ""
+                self.ringTwo.toolTip = "R: \(self.currentColor?.red ?? -1)"
+                self.ringThree.toolTip = "G: \(self.currentColor?.green ?? -1)"
+                self.ringFour.toolTip = "B: \(self.currentColor?.blue ?? -1)"
 
             } else {
 ////                // CMYK Mode
@@ -228,6 +268,11 @@ class MainViewController: NSViewController {
                 self.ringTwo.animate(toDoubleValueB: Double((self.currentColor?.magenta)!))
                 self.ringThree.animate(toDoubleValueC: Double((self.currentColor?.yellow)!))
                 self.ringFour.animate(toDoubleValueD: Double((self.currentColor?.black)!))
+                
+                self.ringOne.toolTip = "C: \(self.currentColor?.cyan ?? -1)"
+                self.ringTwo.toolTip = "M: \(self.currentColor?.magenta ?? -1)"
+                self.ringThree.toolTip = "Y: \(self.currentColor?.yellow ?? -1)"
+                self.ringFour.toolTip = "K: \(self.currentColor?.black ?? -1)"
             }
             
             self.view.window?.backgroundColor = self.currentColor!.getNSColor()

@@ -71,6 +71,18 @@ class Color {
         }
     }
     
+    func shouldShowDark() -> Bool {
+        let grayIndex =
+            0.212671 * Double(self.red) +
+                0.715160 * Double(self.green) +
+                0.072169 * Double(self.blue)
+        if grayIndex > 127 {
+            return false
+        } else {
+            return true
+        }
+    }
+    
     func getAccentColor() -> NSColor {
         return NSColor(calibratedRed: suitableColor(self.red),
                        green: suitableColor(self.green),
