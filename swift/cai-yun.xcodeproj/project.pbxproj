@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8A1F0204216224410015650F /* PercengCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F0203216224410015650F /* PercengCalculator.swift */; };
 		8A1F0211216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F0210216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.m */; };
+		8A1F0213216256E70015650F /* AcknowledgementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F0212216256E70015650F /* AcknowledgementsViewController.swift */; };
 		8A5781AE21610BBD005BABE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5781AD21610BBD005BABE1 /* AppDelegate.swift */; };
 		8A5781B021610BBD005BABE1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5781AF21610BBD005BABE1 /* MainViewController.swift */; };
 		8A5781B221610BBE005BABE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A5781B121610BBE005BABE1 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		8A1F020B21624C540015650F /* cai-yun-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cai-yun-Bridging-Header.h"; sourceTree = "<group>"; };
 		8A1F020F216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSProgressIndicator+ESSProgressIndicatorCategory.h"; path = "../../../../../../Downloads/NSProgressIndicator-ESSProgressIndicatorCategory-master/ESSProgressBarTest/ESSProgressBarTest/NSProgressIndicator+ESSProgressIndicatorCategory.h"; sourceTree = "<group>"; };
 		8A1F0210216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSProgressIndicator+ESSProgressIndicatorCategory.m"; path = "../../../../../../Downloads/NSProgressIndicator-ESSProgressIndicatorCategory-master/ESSProgressBarTest/ESSProgressBarTest/NSProgressIndicator+ESSProgressIndicatorCategory.m"; sourceTree = "<group>"; };
+		8A1F0212216256E70015650F /* AcknowledgementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgementsViewController.swift; sourceTree = "<group>"; };
 		8A5781AA21610BBD005BABE1 /* cai-yun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cai-yun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5781AD21610BBD005BABE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A5781AF21610BBD005BABE1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -120,8 +122,8 @@
 				8A929AA12161C9DB00179F65 /* cai-yun.entitlements */,
 				8A5781B621610BBE005BABE1 /* Info.plist */,
 				8A5781B121610BBE005BABE1 /* Assets.xcassets */,
-				8A1F020A21624C400015650F /* Animator */,
 				8A929A9F2161C8BC00179F65 /* Storyboards */,
+				8A1F020A21624C400015650F /* Animator */,
 				8A929AA02161C8C900179F65 /* Palette */,
 				8A9662412161E86B005B5995 /* Utilities */,
 				8A929A9E2161C8AE00179F65 /* VIewController */,
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				8A5781AF21610BBD005BABE1 /* MainViewController.swift */,
+				8A1F0212216256E70015650F /* AcknowledgementsViewController.swift */,
 			);
 			path = VIewController;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				8A929A9D2161C8AA00179F65 /* Color.swift in Sources */,
 				8A5781B021610BBD005BABE1 /* MainViewController.swift in Sources */,
 				8A9662402161E3E2005B5995 /* Utilities.swift in Sources */,
+				8A1F0213216256E70015650F /* AcknowledgementsViewController.swift in Sources */,
 				8A1F0211216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.m in Sources */,
 				8A5781AE21610BBD005BABE1 /* AppDelegate.swift in Sources */,
 				8A9662432161E882005B5995 /* Constants.swift in Sources */,
