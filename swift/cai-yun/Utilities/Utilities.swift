@@ -106,3 +106,21 @@ extension NSImage {
         unlockFocus()
     }
 }
+
+extension CGPoint {
+    func addOffset(_ type: pixelOffset) -> CGPoint {
+        var newPoint = self
+        switch type {
+        case .bothXandY:
+            newPoint.x -= 2
+            newPoint.y -= 2
+            return newPoint
+        case .Xonly:
+            newPoint.x -= 2
+            return newPoint
+        case .Yonly:
+            newPoint.y -= 2
+            return newPoint
+        }
+    }
+}

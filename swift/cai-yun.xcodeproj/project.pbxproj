@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8A1F0211216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F0210216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.m */; };
 		8A1F0213216256E70015650F /* AcknowledgementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F0212216256E70015650F /* AcknowledgementsViewController.swift */; };
+		8A54409A2163178500BF3E6A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5440992163178500BF3E6A /* SwiftyJSON.framework */; };
 		8A5781AE21610BBD005BABE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5781AD21610BBD005BABE1 /* AppDelegate.swift */; };
 		8A5781B021610BBD005BABE1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5781AF21610BBD005BABE1 /* MainViewController.swift */; };
 		8A5781B221610BBE005BABE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A5781B121610BBE005BABE1 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		8A94EF442161B8C900BE4355 /* chinese_colors.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A94EF422161B8C900BE4355 /* chinese_colors.json */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8A9662402161E3E2005B5995 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A96623F2161E3E2005B5995 /* Utilities.swift */; };
 		8A9662432161E882005B5995 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9662422161E882005B5995 /* Constants.swift */; };
+		8AB96EE921631B2800629C67 /* YapAnimator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB96EE821631B2800629C67 /* YapAnimator.framework */; };
 		8AC43F642162F57600FE06B9 /* metro_line_colors.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AC43F632162F57600FE06B9 /* metro_line_colors.json */; };
 		ADB946E89714F2431AEA5EC4 /* Pods_cai_yun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CBBB71A072EA54C18DE9DF /* Pods_cai_yun.framework */; };
 /* End PBXBuildFile section */
@@ -47,6 +49,7 @@
 		8A1F020F216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSProgressIndicator+ESSProgressIndicatorCategory.h"; path = "../../../../../../Downloads/NSProgressIndicator-ESSProgressIndicatorCategory-master/ESSProgressBarTest/ESSProgressBarTest/NSProgressIndicator+ESSProgressIndicatorCategory.h"; sourceTree = "<group>"; };
 		8A1F0210216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSProgressIndicator+ESSProgressIndicatorCategory.m"; path = "../../../../../../Downloads/NSProgressIndicator-ESSProgressIndicatorCategory-master/ESSProgressBarTest/ESSProgressBarTest/NSProgressIndicator+ESSProgressIndicatorCategory.m"; sourceTree = "<group>"; };
 		8A1F0212216256E70015650F /* AcknowledgementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgementsViewController.swift; sourceTree = "<group>"; };
+		8A5440992163178500BF3E6A /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5781AA21610BBD005BABE1 /* cai-yun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cai-yun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5781AD21610BBD005BABE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A5781AF21610BBD005BABE1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +64,7 @@
 		8A94EF422161B8C900BE4355 /* chinese_colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = chinese_colors.json; path = ../palette/chinese_colors.json; sourceTree = "<group>"; };
 		8A96623F2161E3E2005B5995 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		8A9662422161E882005B5995 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8AB96EE821631B2800629C67 /* YapAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YapAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC43F632162F57600FE06B9 /* metro_line_colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = metro_line_colors.json; path = ../palette/metro_line_colors.json; sourceTree = "<group>"; };
 		B8CBBB71A072EA54C18DE9DF /* Pods_cai_yun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cai_yun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AB96EE921631B2800629C67 /* YapAnimator.framework in Frameworks */,
+				8A54409A2163178500BF3E6A /* SwiftyJSON.framework in Frameworks */,
 				ADB946E89714F2431AEA5EC4 /* Pods_cai_yun.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,6 +178,8 @@
 		D126BC9308B1364D1A49119A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8AB96EE821631B2800629C67 /* YapAnimator.framework */,
+				8A5440992163178500BF3E6A /* SwiftyJSON.framework */,
 				B8CBBB71A072EA54C18DE9DF /* Pods_cai_yun.framework */,
 			);
 			name = Frameworks;
@@ -287,12 +295,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-cai-yun/Pods-cai-yun-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/YapAnimator/YapAnimator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YapAnimator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -1,16 +1,20 @@
 PODS:
   - SwiftyJSON (4.2.0)
+  - YapAnimator (1.2.0)
 
 DEPENDENCIES:
   - SwiftyJSON (= 4.2.0)
+  - YapAnimator
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - SwiftyJSON
+    - YapAnimator
 
 SPEC CHECKSUMS:
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  YapAnimator: eecfd13c5a65087c2af4ddb11a09f7693edec966
 
-PODFILE CHECKSUM: 1e27a07efeb98b4fdf631414c104497aaaf78ddc
+PODFILE CHECKSUM: 9d74e79ca9a3ccd685a4e3e4a2160be2142a4163
 
 COCOAPODS: 1.5.3

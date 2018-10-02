@@ -26,3 +26,19 @@ enum ExpTypes {
     case RGB
     case CMYK
 }
+
+enum pixelOffset {
+    
+    case bothXandY
+    case Yonly
+    case Xonly
+//    case C = [-1, -1]
+//    case M = [0, -1]
+//    case Y = [-1, -1]
+//    case K = [-1, -1]
+//
+//    case R = [0, -1]
+//    case G = [-1, -1]
+//    case B = [0, -1]
+}
+

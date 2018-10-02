@@ -1,0 +1,6 @@
+framework module YapAnimator {
+  umbrella header "YapAnimator-umbrella.h"
+
+  export *
+  module * { export * }
+}

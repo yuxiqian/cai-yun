@@ -9,4 +9,6 @@ target 'cai-yun' do
 
   pod 'SwiftyJSON', "4.2.0"
 
+  pod 'YapAnimator'
+
 end

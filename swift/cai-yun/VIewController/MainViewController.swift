@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import YapAnimator
 
 import SwiftyJSON
 
@@ -27,6 +28,8 @@ class MainViewController: NSViewController {
         super.viewDidLoad()
         
         self.view.window?.isMovableByWindowBackground = true
+        
+        self.titleShadowBar.wantsLayer = true
         
         paletteMenu.addItem(withTitle: "地铁标志色", action: #selector(switchToMetroColors(_:)), keyEquivalent: "m")
         paletteMenu.addItem(withTitle: "中国色", action: #selector(switchToChineseColors(_:)), keyEquivalent: "c")
@@ -76,6 +79,7 @@ class MainViewController: NSViewController {
         if currentColor != nil {
             setColorDisplay()
         }
+        updateConstraints()
     }
     
     
@@ -88,6 +92,7 @@ class MainViewController: NSViewController {
     @IBOutlet weak var ringThree: NSProgressIndicator!
     @IBOutlet weak var ringFour: NSProgressIndicator!
     
+    @IBOutlet weak var imageWrapper: NSTextField!
     
     @IBOutlet weak var CLabel: NSTextField!
     @IBOutlet weak var MLabel: NSTextField!
@@ -139,7 +144,8 @@ class MainViewController: NSViewController {
         
         switchPalette(Palette.chineseColors)
         
-        switchToChineseColors(NSMenuItem())
+
+        
         switchColorDisplay(NSMenuItem())
         
     }
@@ -149,6 +155,7 @@ class MainViewController: NSViewController {
         currentPalette = palettes[palette.rawValue]!
         
         shuffleNextColor()
+        
     }
     
     @objc func releaseUI(_ sender: NSMenuItem) {
@@ -198,8 +205,34 @@ class MainViewController: NSViewController {
     @objc func switchColorDisplay(_ sender: NSMenuItem) {
         
         isRGBAndNotCMYK = !isRGBAndNotCMYK
+        
         if isRGBAndNotCMYK {
-            ringOne.isHidden = true
+//            ringOne.isHidden = true
+            
+            var targetPoint = ringFour.frame.origin
+            
+            RLabel.animated?.position.instant(to: ringFour.frame.origin.addOffset(.Yonly))
+            GLabel.animated?.position.instant(to: ringFour.frame.origin.addOffset(.bothXandY))
+            BLabel.animated?.position.instant(to: ringFour.frame.origin.addOffset(.Yonly))
+            
+            ringOne.animated?.position.animate(to: ringFour.frame.origin)
+            ringOne.animated?.opacity.animate(to: 0.0)
+            
+            targetPoint.y += 80
+            
+            RLabel.animated?.position.animate(to: targetPoint.addOffset(.Yonly))
+            RLabel.animated?.opacity.animate(to: 1.0)
+            
+            targetPoint.y -= 40
+            
+            GLabel.animated?.position.animate(to: targetPoint.addOffset(.bothXandY))
+            GLabel.animated?.opacity.animate(to: 1.0)
+            
+            targetPoint.y -= 40
+            
+            BLabel.animated?.position.animate(to: targetPoint.addOffset(.Yonly))
+            BLabel.animated?.opacity.animate(to: 1.0)
+            
             ringTwo.maxValue = 255
             ringThree.maxValue = 255
             ringFour.maxValue = 255
@@ -210,16 +243,68 @@ class MainViewController: NSViewController {
             
             moreMenu.item(withTitle: "改用 RGB 表示")?.title = "改用 CMYK 表示"
             
-            CLabel.isHidden = true
-            MLabel.isHidden = true
-            YLabel.isHidden = true
-            KLabel.isHidden = true
-            RLabel.isHidden = false
-            GLabel.isHidden = false
-            BLabel.isHidden = false
+            CLabel.animated?.position.animate(to: ringFour.frame.origin.addOffset(.bothXandY))
+            CLabel.animated?.opacity.animate(to: 0.0)
+            
+            
+            MLabel.animated?.position.animate(to: ringFour.frame.origin.addOffset(.Yonly))
+            MLabel.animated?.opacity.animate(to: 0.0)
+            
+            
+            YLabel.animated?.position.animate(to: ringFour.frame.origin.addOffset(.bothXandY))
+            YLabel.animated?.opacity.animate(to: 0.0)
+            
+            
+            KLabel.animated?.position.animate(to: ringFour.frame.origin.addOffset(.bothXandY))
+            KLabel.animated?.opacity.animate(to: 0.0)
+            
             
         } else {
-            ringOne.isHidden = false
+            
+            var targetPoint = ringFour.frame.origin
+            
+            targetPoint.y += 120
+            
+            ringOne.animated?.position.instant(to: ringFour.frame.origin)
+            
+            CLabel.animated?.position.instant(to: ringFour.frame.origin.addOffset(.bothXandY))
+            MLabel.animated?.position.instant(to: ringFour.frame.origin.addOffset(.Yonly))
+            YLabel.animated?.position.instant(to: ringFour.frame.origin.addOffset(.bothXandY))
+            KLabel.animated?.position.instant(to: ringFour.frame.origin.addOffset(.bothXandY))
+            
+            ringOne.animated?.position.animate(to: targetPoint)
+            ringOne.animated?.opacity.animate(to: 1.0)
+            
+            CLabel.animated?.position.animate(to: targetPoint.addOffset(.bothXandY))
+            CLabel.animated?.opacity.animate(to: 1.0)
+            
+            targetPoint.y -= 40
+            
+            MLabel.animated?.position.animate(to: targetPoint.addOffset(.Yonly))
+            MLabel.animated?.opacity.animate(to: 1.0)
+            
+            targetPoint.y -= 40
+            
+            YLabel.animated?.position.animate(to: targetPoint.addOffset(.bothXandY))
+            YLabel.animated?.opacity.animate(to: 1.0)
+            
+            targetPoint.y -= 40
+            
+            KLabel.animated?.position.animate(to: targetPoint.addOffset(.bothXandY))
+            KLabel.animated?.opacity.animate(to: 1.0)
+            
+            RLabel.animated?.position.animate(to: ringFour.frame.origin.addOffset(.Yonly))
+            RLabel.animated?.opacity.animate(to: 0.0)
+            
+            
+            GLabel.animated?.position.animate(to: ringFour.frame.origin.addOffset(.bothXandY))
+            GLabel.animated?.opacity.animate(to: 0.0)
+            
+            
+            BLabel.animated?.position.animate(to: ringFour.frame.origin.addOffset(.Yonly))
+            BLabel.animated?.opacity.animate(to: 0.0)
+            
+            
             ringTwo.maxValue = 100
             ringThree.maxValue = 100
             ringFour.maxValue = 100
@@ -231,13 +316,7 @@ class MainViewController: NSViewController {
             
             moreMenu.item(withTitle: "改用 CMYK 表示")?.title = "改用 RGB 表示"
             
-            CLabel.isHidden = false
-            MLabel.isHidden = false
-            YLabel.isHidden = false
-            KLabel.isHidden = false
-            RLabel.isHidden = true
-            GLabel.isHidden = true
-            BLabel.isHidden = true
+
         }
         setColorDisplay()
         self.isNextTap = false
@@ -254,6 +333,7 @@ class MainViewController: NSViewController {
             let textColor: NSColor = self.currentColor!.getTextColor()
             self.mainNameTitle.stringValue = self.currentColor!.name ?? "__COLOR_NAME__"
             self.mainNameTitle.textColor = textColor
+            
             
             self.aliasNameTitle.stringValue = fixSpelling(self.currentColor!.aliasName)
             self.aliasNameTitle.textColor = textColor
@@ -320,10 +400,41 @@ class MainViewController: NSViewController {
                 self.ringFour.toolTip = "K: \(self.currentColor?.black ?? -1)"
             }
             
+            self.imageWrapper.animated?.opacity.instant(to: 1.0)
+            self.imageWrapper.backgroundColor = self.view.window?.backgroundColor
+            
             self.view.window?.backgroundColor = self.currentColor!.getNSColor()
-            self.titleShadowBar.image = self.currentColor!.getTitleImage(width: Int(self.view.frame.width), height: 20)
+            self.imageWrapper.animated?.opacity.animate(to: 0.0)
+            
+//
+            
+//            self.titleShadowBar.animated?.backgroundColor.animate(to: self.currentColor!.getAccentColor())
+//
+            self.titleShadowBar.layer?.backgroundColor = self.currentColor!.getTitleBarColor()
+//            self.titleShadowBar.image = self.currentColor!.getTitleImage(width: Int(self.view.frame.width), height: 20)
             
         }
+    }
+    
+    func updateConstraints() {
+        
+        CLabel.animated?.position.instant(to: ringOne.frame.origin.addOffset(.bothXandY))
+        MLabel.animated?.position.instant(to: ringTwo.frame.origin.addOffset(.Yonly))
+        YLabel.animated?.position.instant(to: ringThree.frame.origin.addOffset(.bothXandY))
+        KLabel.animated?.position.instant(to: ringFour.frame.origin.addOffset(.bothXandY))
+        
+        RLabel.animated?.position.instant(to: ringTwo.frame.origin.addOffset(.Yonly))
+        GLabel.animated?.position.instant(to: ringThree.frame.origin.addOffset(.bothXandY))
+        BLabel.animated?.position.instant(to: ringFour.frame.origin.addOffset(.Yonly))
+        
+        if isRGBAndNotCMYK {
+            ringOne.animated?.position.instant(to: ringFour.frame.origin)
+        } else {
+            var ringOnePoint = ringFour.frame.origin
+            ringOnePoint.y += 120
+            ringOne.animated?.position.instant(to: ringOnePoint)
+        }
+        
     }
     
     func shuffleNextColor() {
