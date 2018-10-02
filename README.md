@@ -5,6 +5,8 @@
 
 # 彩云
 
+Made with love in the autumn of 2018.
+
 ## 介绍
 
  * 展示数百种中国 & 日本传统色彩。
@@ -16,6 +18,25 @@
  * 希望你喜欢。
  
 ## 屏幕截图
+
+<div align=center>
+    <img height="400" src="https://raw.githubusercontent.com/yuxiqian/cai-yun/master/screenshots/ss_1.png"/>
+</div>
+
+ * RGB 格式表示。
+
+<div align=center>
+    <img height="400" src="https://raw.githubusercontent.com/yuxiqian/cai-yun/master/screenshots/ss_2.png"/>
+</div>
+
+ * CMYK 格式表示。
+
+
+<div align=center>
+    <img height="400" src="https://raw.githubusercontent.com/yuxiqian/cai-yun/master/screenshots/ss_3.png"/>
+</div>
+
+ * 切换调色板和色彩表示方式。
 
 ## 创意来源
 
