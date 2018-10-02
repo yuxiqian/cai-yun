@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A1F0211216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F0210216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.m */; };
 		8A1F0213216256E70015650F /* AcknowledgementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F0212216256E70015650F /* AcknowledgementsViewController.swift */; };
 		8A54409A2163178500BF3E6A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5440992163178500BF3E6A /* SwiftyJSON.framework */; };
 		8A5781AE21610BBD005BABE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5781AD21610BBD005BABE1 /* AppDelegate.swift */; };
@@ -23,6 +22,7 @@
 		8A9662432161E882005B5995 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9662422161E882005B5995 /* Constants.swift */; };
 		8AB96EE921631B2800629C67 /* YapAnimator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB96EE821631B2800629C67 /* YapAnimator.framework */; };
 		8AC43F642162F57600FE06B9 /* metro_line_colors.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AC43F632162F57600FE06B9 /* metro_line_colors.json */; };
+		8AD3CB2B2163747F00360D3B /* NSProgressIndicator+ESSProgressIndicatorCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD3CB2A2163747F00360D3B /* NSProgressIndicator+ESSProgressIndicatorCategory.m */; };
 		ADB946E89714F2431AEA5EC4 /* Pods_cai_yun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CBBB71A072EA54C18DE9DF /* Pods_cai_yun.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,8 +46,6 @@
 		0C31AD5918A42992EDE10097 /* Pods-cai-yun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cai-yun.release.xcconfig"; path = "Pods/Target Support Files/Pods-cai-yun/Pods-cai-yun.release.xcconfig"; sourceTree = "<group>"; };
 		3F02EF200F5924A7949076B1 /* Pods-cai-yun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cai-yun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cai-yun/Pods-cai-yun.debug.xcconfig"; sourceTree = "<group>"; };
 		8A1F020B21624C540015650F /* cai-yun-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cai-yun-Bridging-Header.h"; sourceTree = "<group>"; };
-		8A1F020F216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSProgressIndicator+ESSProgressIndicatorCategory.h"; path = "../../../../../../Downloads/NSProgressIndicator-ESSProgressIndicatorCategory-master/ESSProgressBarTest/ESSProgressBarTest/NSProgressIndicator+ESSProgressIndicatorCategory.h"; sourceTree = "<group>"; };
-		8A1F0210216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSProgressIndicator+ESSProgressIndicatorCategory.m"; path = "../../../../../../Downloads/NSProgressIndicator-ESSProgressIndicatorCategory-master/ESSProgressBarTest/ESSProgressBarTest/NSProgressIndicator+ESSProgressIndicatorCategory.m"; sourceTree = "<group>"; };
 		8A1F0212216256E70015650F /* AcknowledgementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgementsViewController.swift; sourceTree = "<group>"; };
 		8A5440992163178500BF3E6A /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5781AA21610BBD005BABE1 /* cai-yun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cai-yun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +64,8 @@
 		8A9662422161E882005B5995 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8AB96EE821631B2800629C67 /* YapAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YapAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC43F632162F57600FE06B9 /* metro_line_colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = metro_line_colors.json; path = ../palette/metro_line_colors.json; sourceTree = "<group>"; };
+		8AD3CB292163747F00360D3B /* NSProgressIndicator+ESSProgressIndicatorCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSProgressIndicator+ESSProgressIndicatorCategory.h"; sourceTree = "<group>"; };
+		8AD3CB2A2163747F00360D3B /* NSProgressIndicator+ESSProgressIndicatorCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSProgressIndicator+ESSProgressIndicatorCategory.m"; sourceTree = "<group>"; };
 		B8CBBB71A072EA54C18DE9DF /* Pods_cai_yun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cai_yun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -95,8 +95,8 @@
 		8A1F020A21624C400015650F /* Animator */ = {
 			isa = PBXGroup;
 			children = (
-				8A1F020F216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.h */,
-				8A1F0210216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.m */,
+				8AD3CB292163747F00360D3B /* NSProgressIndicator+ESSProgressIndicatorCategory.h */,
+				8AD3CB2A2163747F00360D3B /* NSProgressIndicator+ESSProgressIndicatorCategory.m */,
 				8A1F020B21624C540015650F /* cai-yun-Bridging-Header.h */,
 			);
 			path = Animator;
@@ -321,8 +321,8 @@
 				8A5781B021610BBD005BABE1 /* MainViewController.swift in Sources */,
 				8A9662402161E3E2005B5995 /* Utilities.swift in Sources */,
 				8A1F0213216256E70015650F /* AcknowledgementsViewController.swift in Sources */,
-				8A1F0211216251240015650F /* NSProgressIndicator+ESSProgressIndicatorCategory.m in Sources */,
 				8A5781AE21610BBD005BABE1 /* AppDelegate.swift in Sources */,
+				8AD3CB2B2163747F00360D3B /* NSProgressIndicator+ESSProgressIndicatorCategory.m in Sources */,
 				8A9662432161E882005B5995 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
