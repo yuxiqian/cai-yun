@@ -56,6 +56,8 @@ class MainViewController: NSViewController {
         
         loadPalette()
         
+        
+
     }
 
     override var representedObject: Any? {
@@ -80,6 +82,7 @@ class MainViewController: NSViewController {
             setColorDisplay()
         }
         updateConstraints()
+        self.imageWrapper.backgroundColor = self.currentColor?.getNSColor()
     }
     
     
@@ -142,9 +145,7 @@ class MainViewController: NSViewController {
         palettes[Palette.nipponColors.rawValue] = nippon
         palettes[Palette.metroColors.rawValue] = metro
         
-        switchPalette(Palette.chineseColors)
-        
-
+        switchToChineseColors(NSMenuItem())
         
         switchColorDisplay(NSMenuItem())
         
@@ -272,6 +273,7 @@ class MainViewController: NSViewController {
             YLabel.animated?.position.instant(to: ringFour.frame.origin.addOffset(.bothXandY))
             KLabel.animated?.position.instant(to: ringFour.frame.origin.addOffset(.bothXandY))
             
+            
             ringOne.animated?.position.animate(to: targetPoint)
             ringOne.animated?.opacity.animate(to: 1.0)
             
@@ -331,7 +333,7 @@ class MainViewController: NSViewController {
         if self.currentColor != nil {
             
             let textColor: NSColor = self.currentColor!.getTextColor()
-            self.mainNameTitle.stringValue = self.currentColor!.name ?? "__COLOR_NAME__"
+            self.mainNameTitle.stringValue = self.currentColor!.name ?? ""
             self.mainNameTitle.textColor = textColor
             
             
@@ -372,9 +374,9 @@ class MainViewController: NSViewController {
 //                self.ringFour.doubleValue = Double((self.currentColor?.blue)!)
                 
                 
-                self.ringTwo.animate(toDoubleValueA: Double((self.currentColor?.red)!))
-                self.ringThree.animate(toDoubleValueB: Double((self.currentColor?.green)!))
-                self.ringFour.animate(toDoubleValueC: Double((self.currentColor?.blue)!))
+                self.ringTwo.animate(toDoubleValueB: Double((self.currentColor?.red)!))
+                self.ringThree.animate(toDoubleValueC: Double((self.currentColor?.green)!))
+                self.ringFour.animate(toDoubleValueD: Double((self.currentColor?.blue)!))
 //
                 self.ringOne.toolTip = ""
                 self.ringTwo.toolTip = "R: \(self.currentColor?.red ?? -1)"
