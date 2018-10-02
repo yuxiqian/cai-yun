@@ -56,8 +56,6 @@ class MainViewController: NSViewController {
         
         loadPalette()
         
-        
-
     }
 
     override var representedObject: Any? {
@@ -86,8 +84,13 @@ class MainViewController: NSViewController {
     
     override func viewWillLayout() {
 
-        updateConstraints()
+        
+        self.titleShadowBar.layer?.backgroundColor = self.currentColor!.getTitleBarColor()
 
+        
+        updateConstraints()
+        
+        
     }
     
     
@@ -463,6 +466,8 @@ class MainViewController: NSViewController {
             ringOnePoint.y += 120
             ringOne.animated?.position.instant(to: ringOnePoint)
         }
+        
+        
         
     }
     
