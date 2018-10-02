@@ -28,14 +28,26 @@ class MainViewController: NSViewController {
         
         self.view.window?.isMovableByWindowBackground = true
         
-        paletteMenu.addItem(withTitle: "中国色", action: #selector(switchToChineseColors(_:)), keyEquivalent: "s")
+        paletteMenu.addItem(withTitle: "地铁标志色", action: #selector(switchToMetroColors(_:)), keyEquivalent: "m")
+        paletteMenu.addItem(withTitle: "中国色", action: #selector(switchToChineseColors(_:)), keyEquivalent: "c")
         paletteMenu.addItem(withTitle: "日本の伝統色", action: #selector(switchToNipponColors(_:)), keyEquivalent: "n")
+        
         moreMenu.title = "更多选项"
         moreMenu.addItem(withTitle: "改用 CMYK 表示", action: #selector(switchColorDisplay(_:)), keyEquivalent: "s")
         moreMenu.addItem(withTitle: "选择调色板", action: #selector(releaseUI(_:)), keyEquivalent: "")
         moreMenu.setSubmenu(paletteMenu, for: moreMenu.item(withTitle: "选择调色板")!)
+        moreMenu.addItem(NSMenuItem.separator())
+        moreMenu.addItem(withTitle: "RGB Displayer", action: nil, keyEquivalent: "")
+        moreMenu.addItem(withTitle: "CMYK Displayer", action: nil, keyEquivalent: "")
+        moreMenu.addItem(withTitle: "HSL Displayer", action: nil, keyEquivalent: "")
+        moreMenu.addItem(withTitle: "拷贝十六进制颜色表示", action: #selector(copyHexStr(_:)), keyEquivalent: "o")
+        moreMenu.addItem(NSMenuItem.separator())
         moreMenu.addItem(withTitle: "致谢", action: #selector(showAcknowledgements(_:)), keyEquivalent: "a")
         moreButton.menu = moreMenu
+        
+        moreMenu.item(at: 2)?.isEnabled = false
+        moreMenu.item(at: 3)?.isEnabled = false
+        moreMenu.item(at: 4)?.isEnabled = false
         
         setFont()
         
@@ -94,7 +106,7 @@ class MainViewController: NSViewController {
         self.moreMenu.popUp(positioning: self.moreMenu.item(at: 0), at: p, in: self.view)
     }
     
-    @objc func showAcknowledgements(_ sender: NSStatusItem) {
+    @objc func showAcknowledgements(_ sender: NSMenuItem) {
         
         let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
         let windowController = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("Acknowledgements Controller")) as! NSWindowController
@@ -105,14 +117,25 @@ class MainViewController: NSViewController {
         self.isNextTap = false
     }
     
+    @objc func copyHexStr(_ sender: NSMenuItem) {
+        let hexVal = self.currentColor?.getHexString()
+        if hexVal != nil {
+            let pasteboard = NSPasteboard.general
+            pasteboard.declareTypes([NSPasteboard.PasteboardType.string], owner: nil)
+            pasteboard.setString(hexVal!, forType: NSPasteboard.PasteboardType.string)
+        }
+        self.isNextTap = false
+    }
     
     func loadPalette() {
         
         let chinese = loadResources(Palette.chineseColors)
         let nippon = loadResources(Palette.nipponColors)
+        let metro = loadResources(Palette.metroColors)
         
         palettes[Palette.chineseColors.rawValue] = chinese
         palettes[Palette.nipponColors.rawValue] = nippon
+        palettes[Palette.metroColors.rawValue] = metro
         
         switchPalette(Palette.chineseColors)
         
@@ -134,6 +157,7 @@ class MainViewController: NSViewController {
     
     @objc func switchToChineseColors(_ sender: NSMenuItem) {
         if paletteMenu.item(withTitle: "中国色")!.state == .on {
+            isNextTap = false
             return
         }
         
@@ -142,10 +166,12 @@ class MainViewController: NSViewController {
         
         paletteMenu.item(withTitle: "中国色")!.state = .on
         paletteMenu.item(withTitle: "日本の伝統色")!.state = .off
+        paletteMenu.item(withTitle: "地铁标志色")!.state = .off
     }
     
     @objc func switchToNipponColors(_ sender: NSMenuItem) {
         if paletteMenu.item(withTitle: "日本の伝統色")!.state == .on {
+            isNextTap = false
             return
         }
         switchPalette(.nipponColors)
@@ -153,6 +179,20 @@ class MainViewController: NSViewController {
         
         paletteMenu.item(withTitle: "中国色")!.state = .off
         paletteMenu.item(withTitle: "日本の伝統色")!.state = .on
+        paletteMenu.item(withTitle: "地铁标志色")!.state = .off
+    }
+    
+    @objc func switchToMetroColors(_ sender: NSMenuItem) {
+        if paletteMenu.item(withTitle: "地铁标志色")!.state == .on {
+            isNextTap = false
+            return
+        }
+        switchPalette(.metroColors)
+        isNextTap = false
+        
+        paletteMenu.item(withTitle: "中国色")!.state = .off
+        paletteMenu.item(withTitle: "日本の伝統色")!.state = .off
+        paletteMenu.item(withTitle: "地铁标志色")!.state = .on
     }
     
     @objc func switchColorDisplay(_ sender: NSMenuItem) {
@@ -226,6 +266,11 @@ class MainViewController: NSViewController {
             self.YLabel.textColor = textColor
             self.KLabel.textColor = textColor
             
+            self.moreMenu.item(at: 3)?.title = (self.currentColor?.getRGBString())!
+            self.moreMenu.item(at: 4)?.title = (self.currentColor?.getCMYKString())!
+            self.moreMenu.item(at: 5)?.title = (self.currentColor?.getHSLString())!
+            self.moreMenu.item(at: 6)?.title = "拷贝十六进制表示： \(self.currentColor?.getHexString() ?? "未知")"
+            
             if #available(OSX 10.14, *) {
                 if self.currentColor!.shouldShowDark() {
                     self.ringOne.appearance = NSAppearance(named: .darkAqua)
@@ -276,7 +321,7 @@ class MainViewController: NSViewController {
             }
             
             self.view.window?.backgroundColor = self.currentColor!.getNSColor()
-            self.titleShadowBar.image = self.currentColor!.getTitleImage(width: Int(self.view.frame.width), height: 21)
+            self.titleShadowBar.image = self.currentColor!.getTitleImage(width: Int(self.view.frame.width), height: 20)
             
         }
     }

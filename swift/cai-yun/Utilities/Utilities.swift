@@ -85,9 +85,10 @@ func rgbToHsl(_ i: [Int]) -> [Double] {
 }
 
 func fixSpelling(_ str: String?) -> String {
-    if str == nil {
+    if str == nil || str == "" {
         return "__ALIAS_NAME__"
     }
+
     let result = str!.uppercased().prefix(1) + str!.suffix(str!.count - 1)
     return result.replacingOccurrences(of: "v", with: "yu")
 }

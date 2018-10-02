@@ -43,6 +43,25 @@ class Color {
     var black: Int = 0
     
 
+    func getRGBString() -> String {
+        return "红：" + String(format:"  %03d", self.red)
+            + "\t绿：" + String(format:"  %03d", self.green)
+            + "\t蓝：" + String(format:"  %03d", self.blue)
+    }
+    
+    func getCMYKString() -> String {
+        return "青：" + String(format:"  %03d", self.cyan)
+            + "\t品：" + String(format:"  %03d", self.magenta)
+            + "\t黄：" + String(format:"  %03d", self.yellow)
+            + "\t黑：" + String(format:"  %03d", self.black)
+    }
+    
+    func getHSLString() -> String {
+        let hsl = self.getHSLDisplay()
+        return "色：" + String(format:"%05.1f", hsl[0])
+            + "\t饱：" + String(format:"%05.1f", hsl[1])
+            + "\t明：" + String(format:"%05.1f", hsl[2])
+    }
     
     func getHexString() -> String {
         return "#" + intToHex(self.red) + intToHex(self.green) + intToHex(self.blue)
