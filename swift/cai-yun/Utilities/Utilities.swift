@@ -120,6 +120,7 @@ extension CGPoint {
             return newPoint
         case .Yonly:
             newPoint.y -= 2
+            newPoint.x -= 1
             return newPoint
         }
     }

@@ -77,12 +77,17 @@ class MainViewController: NSViewController {
         isNextTap = true
     }
     
-    override func viewWillLayout() {
+    override func viewDidAppear() {
         if currentColor != nil {
             setColorDisplay()
         }
-        updateConstraints()
         self.imageWrapper.backgroundColor = self.currentColor?.getNSColor()
+    }
+    
+    override func viewWillLayout() {
+
+        updateConstraints()
+
     }
     
     
@@ -333,12 +338,34 @@ class MainViewController: NSViewController {
         if self.currentColor != nil {
             
             let textColor: NSColor = self.currentColor!.getTextColor()
-            self.mainNameTitle.stringValue = self.currentColor!.name ?? ""
-            self.mainNameTitle.textColor = textColor
             
+            if self.mainNameTitle.animated != nil {
+                self.mainNameTitle.animated?.speed = 1.0
+                self.mainNameTitle.animated?.opacity.animate(to: 0.0) {_,_ in
+                    self.mainNameTitle.stringValue = self.currentColor!.name ?? ""
+                    self.mainNameTitle.textColor = textColor
+                    self.mainNameTitle.animated?.speed = 4.0
+                    self.mainNameTitle.animated?.opacity.animate(to: 1.0)
+                }
+            } else {
+                self.mainNameTitle.stringValue = self.currentColor!.name ?? ""
+                self.mainNameTitle.textColor = textColor
+            }
             
-            self.aliasNameTitle.stringValue = fixSpelling(self.currentColor!.aliasName)
-            self.aliasNameTitle.textColor = textColor
+            if self.aliasNameTitle.animated != nil {
+                self.aliasNameTitle.animated?.speed = 1.0
+                
+                self.aliasNameTitle.animated?.opacity.animate(to: 0.0) {_,_ in
+                    self.aliasNameTitle.stringValue = fixSpelling(self.currentColor!.aliasName)
+                    self.aliasNameTitle.textColor = textColor
+                    self.aliasNameTitle.animated?.speed = 4.0
+                    self.aliasNameTitle.animated?.opacity.animate(to: 1.0)
+                }
+            } else {
+                self.aliasNameTitle.stringValue = fixSpelling(self.currentColor!.aliasName)
+                self.aliasNameTitle.textColor = textColor
+            }
+            
             
             self.RLabel.textColor = textColor
             self.GLabel.textColor = textColor
