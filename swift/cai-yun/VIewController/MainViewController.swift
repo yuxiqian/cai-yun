@@ -122,6 +122,15 @@ class MainViewController: NSViewController {
         self.moreMenu.popUp(positioning: self.moreMenu.item(at: 0), at: p, in: self.view)
     }
     
+    @IBAction func aboutButtonClicked(_ sender: NSButton) {
+        let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("About Window Controller")) as! NSWindowController
+        
+        if let window = windowController.window {
+            self.view.window?.beginSheet(window, completionHandler: nil)
+        }
+    }
+    
     @objc func showAcknowledgements(_ sender: NSMenuItem) {
         
         let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)

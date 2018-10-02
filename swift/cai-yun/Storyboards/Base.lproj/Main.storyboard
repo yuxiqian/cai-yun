@@ -19,7 +19,7 @@
                                         <menuItem title="关于「彩云」" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
-                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                                <action selector="aboutButtonClicked:" target="Ady-hI-5gd" id="PNm-31-CIk"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
@@ -126,7 +126,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="74" y="428"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="lcn-xu-OeU">
@@ -1267,6 +1267,127 @@ DQ
             </objects>
             <point key="canvasLocation" x="629" y="776"/>
         </scene>
+        <!--Window Controller-->
+        <scene sceneID="3HU-q7-bpz">
+            <objects>
+                <windowController storyboardIdentifier="About Window Controller" id="tor-gB-16R" sceneMemberID="viewController">
+                    <window key="window" title="About Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" id="TlT-Wy-faL">
+                        <windowStyleMask key="styleMask" titled="YES" texturedBackground="YES" fullSizeContentView="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="280" height="250"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+                        <connections>
+                            <outlet property="delegate" destination="tor-gB-16R" id="W7T-0b-8oz"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="KDt-dq-V1v" kind="relationship" relationship="window.shadowedContentViewController" id="NAg-l6-O3a"/>
+                    </connections>
+                </windowController>
+                <customObject id="xs8-Jg-KmM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-518" y="211"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="OcN-kM-8rm">
+            <objects>
+                <viewController id="KDt-dq-V1v" customClass="AboutViewController" customModule="cai_yun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="enq-Vu-HPH" customClass="NSVisualEffectView">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="250"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y7M-9E-cVE">
+                                <rect key="frame" x="113" y="2" width="54" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <buttonCell key="cell" type="push" title="嗯" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JKG-QH-jGf">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="shutWindow:" target="KDt-dq-V1v" id="UOl-us-Jze"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KjI-eh-abJ">
+                                <rect key="frame" x="88" y="107" width="104" height="22"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="「彩云」" id="NHl-gS-oqE">
+                                    <font key="font" metaFont="systemMedium" size="18"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r21-1n-SGz">
+                                <rect key="frame" x="70" y="82" width="141" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="$(PRODUCT_BUNDLE_IDENTIFIER)" id="IX2-vB-INP">
+                                    <font key="font" metaFont="system" size="12"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yMs-TC-mNQ">
+                                <rect key="frame" x="-2" y="63" width="284" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Label" id="mq0-Za-A1c">
+                                    <font key="font" metaFont="system" size="10"/>
+                                    <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Of8-lf-Eug">
+                                <rect key="frame" x="38" y="36" width="75" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundRect" title="Github 页面" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NnE-jc-SJs">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="11"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="goToGithubPages:" target="KDt-dq-V1v" id="pjM-Mj-jpO"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ZD-9J-HqM">
+                                <rect key="frame" x="166" y="36" width="71" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundRect" title="发邮件给我" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6AX-DB-d7T">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="11"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="mailMe:" target="KDt-dq-V1v" id="Qzh-vA-RT8"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fFJ-ir-rdg">
+                                <rect key="frame" x="121" y="36" width="37" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundRect" title="致谢" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qMs-lf-L3D">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="11"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="turnCredits:" target="KDt-dq-V1v" id="h1b-X9-tS6"/>
+                                </connections>
+                            </button>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q2t-pQ-ffX">
+                                <rect key="frame" x="94" y="140" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSApplicationIcon" id="sdR-Ip-CLQ"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="enq-Vu-HPH" id="T5T-mt-Gsm"/>
+                        <outlet property="systemLabel" destination="yMs-TC-mNQ" id="Vb9-PG-1dq"/>
+                        <outlet property="versionLabel" destination="r21-1n-SGz" id="738-9l-jaL"/>
+                        <outlet property="view" destination="enq-Vu-HPH" id="wHI-im-cG0"/>
+                    </connections>
+                </viewController>
+                <customObject id="3pa-53-KwI" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-518" y="737"/>
+        </scene>
         <!--Main View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
@@ -1420,10 +1541,11 @@ DQ
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="776"/>
+            <point key="canvasLocation" x="74" y="906"/>
         </scene>
     </scenes>
     <resources>
         <image name="NSAddTemplate" width="11" height="11"/>
+        <image name="NSApplicationIcon" width="128" height="128"/>
     </resources>
 </document>
