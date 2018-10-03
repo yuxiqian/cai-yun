@@ -5,7 +5,7 @@
 
 # 彩云
 
-Made with love in the autumn of 2018.
+> Dedicated to **her**.
 
 ## 介绍
 
@@ -20,20 +20,20 @@ Made with love in the autumn of 2018.
 ## 屏幕截图
 
 <div align=center>
-    <img height="400" src="https://raw.githubusercontent.com/yuxiqian/cai-yun/master/screenshots/ss_1.png"/>
+    <img src="https://raw.githubusercontent.com/yuxiqian/cai-yun/master/screenshots/ss_1.png" max-width="90%"/>
 </div>
 
  * RGB 格式表示。
 
 <div align=center>
-    <img height="400" src="https://raw.githubusercontent.com/yuxiqian/cai-yun/master/screenshots/ss_2.png"/>
+    <img src="https://raw.githubusercontent.com/yuxiqian/cai-yun/master/screenshots/ss_2.png" max-width="90%"/>
 </div>
 
  * CMYK 格式表示。
 
 
 <div align=center>
-    <img height="400" src="https://raw.githubusercontent.com/yuxiqian/cai-yun/master/screenshots/ss_3.png"/>
+    <img src="https://raw.githubusercontent.com/yuxiqian/cai-yun/master/screenshots/ss_3.png" max-width="90%"/>
 </div>
 
  * 切换调色板和色彩表示方式。
