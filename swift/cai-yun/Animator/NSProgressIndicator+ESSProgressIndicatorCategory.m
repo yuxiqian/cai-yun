@@ -8,6 +8,8 @@
 
 #import "NSProgressIndicator+ESSProgressIndicatorCategory.h"
 
+//#include <stdio.h>
+
 @interface ESSProgressBarAnimation : NSAnimation
 
 @property (weak) NSProgressIndicator *progInd;
@@ -145,11 +147,11 @@ static ESSProgressBarAnimation *animD = nil;
 	
 	double delta = self.newValue - self.initialValue;
 	
-	self.progInd.doubleValue = self.initialValue + (delta * self.currentValue);
+	self.progInd.doubleValue = (double) ( (int) (self.initialValue + (delta * self.currentValue)  + 0.5 ) );
     
     // changed from currentProgress to currentValue to take into account animationCurves. Thanks, Alan B. for the tip
     
-    printf("Now, progInd.doubleValue = %f, min = %f, max = %f)", self.progInd.doubleValue, self.progInd.minValue, self.progInd.maxValue);
+//    printf("Now, progInd.doubleValue = %f, min = %f, max = %f)", self.progInd.doubleValue, self.progInd.minValue, self.progInd.maxValue);
     if ((int) self.progInd.doubleValue == (int) self.progInd.minValue) {
         self.progInd.doubleValue = self.progInd.minValue;
     } else if ((int) (self.progInd.doubleValue + 1) >= (int) (self.progInd.maxValue)) {
