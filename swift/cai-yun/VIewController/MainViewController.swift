@@ -346,6 +346,7 @@ class MainViewController: NSViewController {
         self.aliasNameTitle.font = getFont(.aliasName)
     }
     
+    
     func setColorDisplay() {
         if self.currentColor != nil {
             
@@ -445,7 +446,9 @@ class MainViewController: NSViewController {
             self.imageWrapper.backgroundColor = self.view.window?.backgroundColor
             
             self.view.window?.backgroundColor = self.currentColor!.getNSColor()
+            
             self.imageWrapper.animated?.opacity.animate(to: 0.0)
+
             
 //
             
