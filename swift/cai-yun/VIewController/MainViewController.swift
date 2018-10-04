@@ -251,13 +251,16 @@ class MainViewController: NSViewController {
             BLabel.animated?.position.animate(to: targetPoint.addOffset(.Yonly))
             BLabel.animated?.opacity.animate(to: 1.0)
             
-            ringTwo.maxValue = 255
-            ringThree.maxValue = 255
-            ringFour.maxValue = 255
             
-            ringTwo.doubleValue *= 2.55
-            ringThree.doubleValue *= 2.55
-            ringFour.doubleValue *= 2.55
+            ringTwo.maxValue = 255.0
+            ringThree.maxValue = 255.0
+            ringFour.maxValue = 255.0
+            
+            ringTwo.doubleValue = floor(ringTwo.doubleValue * 2.55)
+            ringThree.doubleValue = floor(ringThree.doubleValue * 2.55)
+            ringFour.doubleValue = floor(ringFour.doubleValue * 2.55)
+            
+            
             
             moreMenu.item(withTitle: "改用 RGB 表示")?.title = "改用 CMYK 表示"
             
@@ -323,15 +326,20 @@ class MainViewController: NSViewController {
             BLabel.animated?.position.animate(to: ringFour.frame.origin.addOffset(.Yonly))
             BLabel.animated?.opacity.animate(to: 0.0)
             
+            ringTwo.minValue = 0.0
+            ringThree.minValue = 0.0
+            ringFour.minValue = 0.0
             
-            ringTwo.maxValue = 100
-            ringThree.maxValue = 100
-            ringFour.maxValue = 100
+
             
             ringOne.doubleValue = 0.0
-            ringTwo.doubleValue *= 0.392
-            ringThree.doubleValue *= 0.392
-            ringFour.doubleValue *= 0.392
+            ringTwo.doubleValue = floor(ringTwo.doubleValue * 0.392)
+            ringThree.doubleValue = floor(ringThree.doubleValue * 0.392)
+            ringFour.doubleValue = floor(ringFour.doubleValue * 0.392)
+            
+            ringTwo.maxValue = 100.0
+            ringThree.maxValue = 100.0
+            ringFour.maxValue = 100.0
             
             moreMenu.item(withTitle: "改用 CMYK 表示")?.title = "改用 RGB 表示"
             
@@ -478,8 +486,6 @@ class MainViewController: NSViewController {
             ringOnePoint.y += 120
             ringOne.animated?.position.instant(to: ringOnePoint)
         }
-        
-        
         
     }
     

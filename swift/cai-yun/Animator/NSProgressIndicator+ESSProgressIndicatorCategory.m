@@ -146,25 +146,30 @@ static ESSProgressBarAnimation *animD = nil;
 	[super setCurrentProgress:currentProgress];
 	
 	double delta = self.newValue - self.initialValue;
+    
+    double expectValue = self.initialValue + (delta * self.currentValue);
+    
+    if (expectValue < self.progInd.minValue + 1) {
+        expectValue = self.progInd.minValue;
+        printf("triggered to the min\n");
+    } else if ( expectValue > self.progInd.maxValue - 1 ){
+        expectValue = self.progInd.maxValue;
+        printf("triggered to the max\n");
+    }
 	
-	self.progInd.doubleValue = self.initialValue + (delta * self.currentValue);
+    self.progInd.doubleValue = expectValue;
     
     // changed from currentProgress to currentValue to take into account animationCurves. Thanks, Alan B. for the tip
     
 //    printf("Now, progInd.doubleValue = %f, min = %f, max = %f)", self.progInd.doubleValue, self.progInd.minValue, self.progInd.maxValue);
-    
-    if (self.progInd.doubleValue < 1.0) {
-        self.progInd.doubleValue = self.progInd.minValue;
-        printf("triggered to the min\n");
-    } else if ((int) (self.progInd.doubleValue + 1) >= (int) (self.progInd.maxValue)) {
-        self.progInd.doubleValue = self.progInd.maxValue;
-        printf("triggered to the max\n");
-    }
-    printf("Now, progInd.doubleValue = %f, min = %f, max = %f)\n", self.progInd.doubleValue, self.progInd.minValue, self.progInd.maxValue);
 
+    printf("Now, progInd.doubleValue = %f, min = %f, max = %f)\n", self.progInd.doubleValue, self.progInd.minValue, self.progInd.maxValue);
+    
+    printf("---------------------------------\n");
     
 	
     if (currentProgress == 1.0 && [self.progInd respondsToSelector:@selector(animationDealloc)]) {
+        printf("called end info.\n");
         [self.progInd animationDealloc];
         
     }

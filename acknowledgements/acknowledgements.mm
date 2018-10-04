@@ -1,14 +1,16 @@
 /*
  
+ 色彩数据来自
+ 
  Chinese Colors
  
  中国色
  http://zhongguose.com
  
  Copyright (c) 2013 Perchouli.
-
-
-
+ 
+ 
+ 
  Nippon Colors
  
  日本の伝統色
@@ -19,18 +21,41 @@
  
  
  
- 参考文献
+ 上海地铁标志色
  
- 
- 色谱. 中科院科技情报编委会名词室. 科学出版社, 1957.
- 
- CMYK FORGA39, Dot Gain 15%
- 
- 日本の伝統色 "The Traditional Colors of Japan". PIE BOOKS, 2007.
+ http://shmetro.com
+ Copyright © 2008 上海申通地铁集团有限公司
+ 版权所有 All Rights Reserved.
  
  
  
- adobe-fonts/source-han-serif/LICENSE
+ 北京地铁标志色
+ 
+ https://www.bjsubway.com
+ 版权所有 北京市地铁运营有限公司
+ 
+ 
+ 
+ 
+ 武汉地铁标志色
+ 
+ http://www.whrt.gov.cn
+ COPYRIGHT © 2013
+ 版权所有：武汉地铁集团有限公司
+ 
+ 
+ 
+ 香港地铁标志色
+ 
+ http://www.mtr.com.hk/
+ © 香港鐵路有限公司 2018
+ 
+ 
+ 
+ 字体数据来自
+ 
+ 
+ adobe-fonts/source-han-serif
  
  This Font Software is licensed under the SIL Open Font License,
  Version 1.1.
@@ -127,6 +152,8 @@
  
  
  
+ 第三方开源库
+ 
  
  
  eternalstorms/NSProgressIndicator+ESSProgressIndicatorCategory
@@ -145,7 +172,7 @@
  
  
  
- SwiftyJSON/SwiftyJSON
+ SwiftyJSON
  
  The MIT License (MIT)
  
@@ -171,11 +198,54 @@
  
  
  
+ 
+ yapstudios/YapAnimator
+ 
+ 
+ Copyright © 2017 Yap Studios LLC (http://yapstudios.com)
+ All rights reserved.
+ 
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ 
+ * Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ 
+ * Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the documentation
+ and/or other materials provided with the distribution.
+ 
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ 
+ 
+ 
+ 
  App Icon Gear
  
  包含 「App Icon Gear」生成的图标数据。
  版本 1.5.5 (66)
  Copyright © 2015年 樊航宇. All rights reserved.
+ 
+ 
+ 
+ 
+ 
+ 维基百科/Wikipedia
+ 
+ 本站的全部文字在知识共享 署名-相同方式共享 3.0 协议之条款下提供。
+ 附加条款亦可能应用。
+ Wikipedia ® 和维基百科标志是维基媒体基金会的注册商标。
+ 维基™是维基媒体基金会的商标。
+ 维基媒体基金会是按美国国內税收法501(c)(3)登记的非营利慈善机构。
 
  
  */
