@@ -361,11 +361,9 @@ class MainViewController: NSViewController {
             let textColor: NSColor = self.currentColor!.getTextColor()
             
             if self.mainNameTitle.animated != nil {
-                self.mainNameTitle.animated?.speed = 1.0
                 self.mainNameTitle.animated?.opacity.animate(to: 0.0) {_,_ in
                     self.mainNameTitle.stringValue = self.currentColor!.name ?? ""
                     self.mainNameTitle.textColor = textColor
-                    self.mainNameTitle.animated?.speed = 4.0
                     self.mainNameTitle.animated?.opacity.animate(to: 1.0)
                 }
             } else {
@@ -374,12 +372,9 @@ class MainViewController: NSViewController {
             }
             
             if self.aliasNameTitle.animated != nil {
-                self.aliasNameTitle.animated?.speed = 1.0
-                
                 self.aliasNameTitle.animated?.opacity.animate(to: 0.0) {_,_ in
                     self.aliasNameTitle.stringValue = fixSpelling(self.currentColor!.aliasName)
                     self.aliasNameTitle.textColor = textColor
-                    self.aliasNameTitle.animated?.speed = 4.0
                     self.aliasNameTitle.animated?.opacity.animate(to: 1.0)
                 }
             } else {
