@@ -54,11 +54,15 @@
 
 * [ESSProgressIndicatorCategory](https://github.com/eternalstorms/NSProgressIndicator-ESSProgressIndicatorCategory)
 
+* [github-language-colors](https://github.com/doda/github-language-colors)
+
 ### Python
 
 * [requests](https://github.com/requests/requests)
 
 * [lxml](https://github.com/lxml/lxml)
+
+* [PyYaml](https://pyyaml.org/)
 
 ## 色彩数据来自
 
