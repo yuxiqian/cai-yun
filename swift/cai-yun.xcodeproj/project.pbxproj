@@ -13,6 +13,8 @@
 		8A5781B021610BBD005BABE1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5781AF21610BBD005BABE1 /* MainViewController.swift */; };
 		8A5781B221610BBE005BABE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A5781B121610BBE005BABE1 /* Assets.xcassets */; };
 		8A5781B521610BBE005BABE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5781B321610BBE005BABE1 /* Main.storyboard */; };
+		8A85EA452170DD0B005B5766 /* github_colors.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A85EA442170DD0B005B5766 /* github_colors.json */; };
+		8A85EA462170DD13005B5766 /* github_colors.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A85EA442170DD0B005B5766 /* github_colors.json */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8A929A9B2161C78B00179F65 /* ResourceReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A929A9A2161C78B00179F65 /* ResourceReader.swift */; };
 		8A929A9D2161C8AA00179F65 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A929A9C2161C8AA00179F65 /* Color.swift */; };
 		8A94EF402161B8B000BE4355 /* SourceHanSerifCN-Light.otf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A94EF3F2161B8B000BE4355 /* SourceHanSerifCN-Light.otf */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -21,7 +23,7 @@
 		8A9662402161E3E2005B5995 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A96623F2161E3E2005B5995 /* Utilities.swift */; };
 		8A9662432161E882005B5995 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9662422161E882005B5995 /* Constants.swift */; };
 		8AB96EE921631B2800629C67 /* YapAnimator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB96EE821631B2800629C67 /* YapAnimator.framework */; };
-		8AC43F642162F57600FE06B9 /* metro_line_colors.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AC43F632162F57600FE06B9 /* metro_line_colors.json */; };
+		8AC43F642162F57600FE06B9 /* metro_line_colors.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AC43F632162F57600FE06B9 /* metro_line_colors.json */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8AD3CB2B2163747F00360D3B /* NSProgressIndicator+ESSProgressIndicatorCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD3CB2A2163747F00360D3B /* NSProgressIndicator+ESSProgressIndicatorCategory.m */; };
 		8AD4964F2163B111009C1B6B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD4964E2163B111009C1B6B /* AboutViewController.swift */; };
 		ADB946E89714F2431AEA5EC4 /* Pods_cai_yun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CBBB71A072EA54C18DE9DF /* Pods_cai_yun.framework */; };
@@ -34,6 +36,7 @@
 			dstPath = resources;
 			dstSubfolderSpec = 7;
 			files = (
+				8A85EA462170DD13005B5766 /* github_colors.json in CopyFiles */,
 				8AC43F642162F57600FE06B9 /* metro_line_colors.json in CopyFiles */,
 				8A94EF432161B8C900BE4355 /* nippon_colors.json in CopyFiles */,
 				8A94EF442161B8C900BE4355 /* chinese_colors.json in CopyFiles */,
@@ -55,6 +58,7 @@
 		8A5781B121610BBE005BABE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A5781B421610BBE005BABE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A5781B621610BBE005BABE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A85EA442170DD0B005B5766 /* github_colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = github_colors.json; path = ../palette/github_colors.json; sourceTree = "<group>"; };
 		8A929A9A2161C78B00179F65 /* ResourceReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceReader.swift; sourceTree = "<group>"; };
 		8A929A9C2161C8AA00179F65 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		8A929AA12161C9DB00179F65 /* cai-yun.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "cai-yun.entitlements"; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 				8AC43F632162F57600FE06B9 /* metro_line_colors.json */,
 				8A94EF422161B8C900BE4355 /* chinese_colors.json */,
 				8A94EF412161B8C900BE4355 /* nippon_colors.json */,
+				8A85EA442170DD0B005B5766 /* github_colors.json */,
 				8A94EF3F2161B8B000BE4355 /* SourceHanSerifCN-Light.otf */,
 				8A5781AC21610BBD005BABE1 /* cai-yun */,
 				8A5781AB21610BBD005BABE1 /* Products */,
@@ -260,6 +265,7 @@
 			files = (
 				8A5781B221610BBE005BABE1 /* Assets.xcassets in Resources */,
 				8A5781B521610BBE005BABE1 /* Main.storyboard in Resources */,
+				8A85EA452170DD0B005B5766 /* github_colors.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

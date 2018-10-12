@@ -26,21 +26,36 @@ class Color {
         self.magenta = m
         self.yellow = y
         self.black = k
+        
+        self.hasCMYK = true
     }
     
+    init(Name: String, Alias: String,
+         _ r: Int, _ g: Int, _ b: Int) {
+        
+        self.name = Name
+        self.aliasName = Alias
+        
+        self.red = r
+        self.green = g
+        self.blue = b
+        
+        self.hasCMYK = false
+    }
     
+    var hasCMYK: Bool
     
     var name: String?
     var aliasName: String?
+
+    var red: Int
+    var green: Int
+    var blue: Int
     
-    var red: Int = 0
-    var green: Int = 0
-    var blue: Int = 0
-    
-    var cyan: Int = 0
-    var magenta: Int = 0
-    var yellow: Int = 0
-    var black: Int = 0
+    var cyan: Int?
+    var magenta: Int?
+    var yellow: Int?
+    var black: Int?
     
 
     func getRGBString() -> String {
@@ -49,11 +64,15 @@ class Color {
             + "\t蓝：" + String(format:"  %03d", self.blue)
     }
     
-    func getCMYKString() -> String {
-        return "青：" + String(format:"  %03d", self.cyan)
-            + "\t品：" + String(format:"  %03d", self.magenta)
-            + "\t黄：" + String(format:"  %03d", self.yellow)
-            + "\t黑：" + String(format:"  %03d", self.black)
+    func getCMYKString() -> String? {
+        if hasCMYK {
+            return "青：" + String(format:"  %03d", self.cyan!)
+            + "\t品：" + String(format:"  %03d", self.magenta!)
+            + "\t黄：" + String(format:"  %03d", self.yellow!)
+            + "\t黑：" + String(format:"  %03d", self.black!)
+        } else {
+            return nil
+        }
     }
     
     func getHSLString() -> String {

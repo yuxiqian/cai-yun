@@ -31,7 +31,8 @@ class MainViewController: NSViewController {
         
         self.titleShadowBar.wantsLayer = true
         
-        paletteMenu.addItem(withTitle: "地铁标志色", action: #selector(switchToMetroColors(_:)), keyEquivalent: "m")
+        paletteMenu.addItem(withTitle: "地铁标识色", action: #selector(switchToMetroColors(_:)), keyEquivalent: "m")
+        paletteMenu.addItem(withTitle: "GitHub 语言标识色", action: #selector(switchToGitHubColors(_:)), keyEquivalent: "g")
         paletteMenu.addItem(withTitle: "中国色", action: #selector(switchToChineseColors(_:)), keyEquivalent: "c")
         paletteMenu.addItem(withTitle: "日本の伝統色", action: #selector(switchToNipponColors(_:)), keyEquivalent: "n")
         
@@ -157,10 +158,12 @@ class MainViewController: NSViewController {
         let chinese = loadResources(Palette.chineseColors)
         let nippon = loadResources(Palette.nipponColors)
         let metro = loadResources(Palette.metroColors)
+        let github = loadResources(Palette.githubColors)
         
         palettes[Palette.chineseColors.rawValue] = chinese
         palettes[Palette.nipponColors.rawValue] = nippon
         palettes[Palette.metroColors.rawValue] = metro
+        palettes[Palette.githubColors.rawValue] = github
         
         switchToChineseColors(NSMenuItem())
         
@@ -191,7 +194,8 @@ class MainViewController: NSViewController {
         
         paletteMenu.item(withTitle: "中国色")!.state = .on
         paletteMenu.item(withTitle: "日本の伝統色")!.state = .off
-        paletteMenu.item(withTitle: "地铁标志色")!.state = .off
+        paletteMenu.item(withTitle: "地铁标识色")!.state = .off
+        paletteMenu.item(withTitle: "GitHub 语言标识色")!.state = .off
     }
     
     @objc func switchToNipponColors(_ sender: NSMenuItem) {
@@ -204,11 +208,12 @@ class MainViewController: NSViewController {
         
         paletteMenu.item(withTitle: "中国色")!.state = .off
         paletteMenu.item(withTitle: "日本の伝統色")!.state = .on
-        paletteMenu.item(withTitle: "地铁标志色")!.state = .off
+        paletteMenu.item(withTitle: "地铁标识色")!.state = .off
+        paletteMenu.item(withTitle: "GitHub 语言标识色")!.state = .off
     }
     
     @objc func switchToMetroColors(_ sender: NSMenuItem) {
-        if paletteMenu.item(withTitle: "地铁标志色")!.state == .on {
+        if paletteMenu.item(withTitle: "地铁标识色")!.state == .on {
             isNextTap = false
             return
         }
@@ -217,7 +222,22 @@ class MainViewController: NSViewController {
         
         paletteMenu.item(withTitle: "中国色")!.state = .off
         paletteMenu.item(withTitle: "日本の伝統色")!.state = .off
-        paletteMenu.item(withTitle: "地铁标志色")!.state = .on
+        paletteMenu.item(withTitle: "地铁标识色")!.state = .on
+        paletteMenu.item(withTitle: "GitHub 语言标识色")!.state = .off
+    }
+    
+    @objc func switchToGitHubColors(_ sender: NSMenuItem) {
+        if paletteMenu.item(withTitle: "GitHub 语言标识色")!.state == .on {
+            isNextTap = false
+            return
+        }
+        switchPalette(.githubColors)
+        isNextTap = false
+        
+        paletteMenu.item(withTitle: "中国色")!.state = .off
+        paletteMenu.item(withTitle: "日本の伝統色")!.state = .off
+        paletteMenu.item(withTitle: "地铁标识色")!.state = .off
+        paletteMenu.item(withTitle: "GitHub 语言标识色")!.state = .on
     }
     
     @objc func switchColorDisplay(_ sender: NSMenuItem) {
@@ -498,5 +518,19 @@ class MainViewController: NSViewController {
             self.currentColor = nextColor
         }
         setColorDisplay()
+        checkIfNoCMYK()
+    }
+    
+    func checkIfNoCMYK() {
+        if currentColor?.cyan == magicInvalidNumber {
+            if !isRGBAndNotCMYK {
+                switchColorDisplay(NSMenuItem())
+            }
+            moreMenu.item(at: 0)?.isHidden = true
+            moreMenu.item(at: 4)?.isHidden = true
+        } else {
+            moreMenu.item(at: 0)?.isHidden = false
+            moreMenu.item(at: 4)?.isHidden = false
+        }
     }
 }

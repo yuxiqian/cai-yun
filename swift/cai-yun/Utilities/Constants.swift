@@ -8,10 +8,14 @@
 
 import Foundation
 
+
+let magicInvalidNumber = -42
+
 enum Palette: String {
     case chineseColors = "chinese_colors"
     case nipponColors = "nippon_colors"
     case metroColors = "metro_line_colors"
+    case githubColors = "github_colors"
     //    case additionColors = "addition_colors"
 }
 

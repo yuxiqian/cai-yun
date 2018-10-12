@@ -1,3 +1,5 @@
+magic_invalid_number = -42
+
 def to_hex(integer):
     h = hex(integer)[2:]
     return ('0' * (2 - len(h))) + h
@@ -36,7 +38,7 @@ class Color:
         self.magenta_int = m
         self.yellow_int = y
         self.black_int = k
-        
+
     #
     # def __init__(self, name, r, g, b):
     #     self.name = name
