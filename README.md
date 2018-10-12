@@ -54,8 +54,6 @@
 
 * [ESSProgressIndicatorCategory](https://github.com/eternalstorms/NSProgressIndicator-ESSProgressIndicatorCategory)
 
-* [github-language-colors](https://github.com/doda/github-language-colors)
-
 ### Python
 
 * [requests](https://github.com/requests/requests)
@@ -69,6 +67,8 @@
 * [NIPPON COLORS - 日本の伝統色](http://nipponcolors.com)
 
 * [中国色](http://zhongguose.com)
+
+* [github-language-colors](https://github.com/doda/github-language-colors)
 
 * [上海申通地铁集团有限公司](http://shmetro.com)
 
