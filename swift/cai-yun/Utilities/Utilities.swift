@@ -30,16 +30,18 @@ func Max(_ i: Double, _ j: Double) -> Double {
 }
 
 func suitableColor(_ int: Int) -> CGFloat {
-    if #available(OSX 10.14, *) {
-        let appear = NSApplication.shared.effectiveAppearance
-        if appear.name == .aqua {
-            return (pow(CGFloat(int) / 255.0, 2.0) * 0.5 + 0.5)
+    /*
+        if #available(OSX 10.14, *) {
+            let appear = NSApplication.shared.effectiveAppearance
+            if appear.name == .aqua {
+                return (pow(CGFloat(int) / 255.0, 2.0) * 0.5 + 0.5)
+            } else {
+                return (pow(CGFloat(int) / 255.0, 2.0) * 0.5)
+            }
         } else {
-            return (pow(CGFloat(int) / 255.0, 2.0) * 0.5)
-        }
-    } else {
+     */
         return (pow(CGFloat(int) / 255.0, 2.0) * 0.5 + 0.5)
-    }
+    /* } */
 }
 
 

@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8A1F0213216256E70015650F /* AcknowledgementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F0212216256E70015650F /* AcknowledgementsViewController.swift */; };
+		8A359E5121757175000677DC /* TransparentWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A359E5021757175000677DC /* TransparentWindowController.swift */; };
 		8A54409A2163178500BF3E6A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5440992163178500BF3E6A /* SwiftyJSON.framework */; };
 		8A5781AE21610BBD005BABE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5781AD21610BBD005BABE1 /* AppDelegate.swift */; };
 		8A5781B021610BBD005BABE1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5781AF21610BBD005BABE1 /* MainViewController.swift */; };
@@ -51,6 +52,7 @@
 		3F02EF200F5924A7949076B1 /* Pods-cai-yun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cai-yun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cai-yun/Pods-cai-yun.debug.xcconfig"; sourceTree = "<group>"; };
 		8A1F020B21624C540015650F /* cai-yun-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cai-yun-Bridging-Header.h"; sourceTree = "<group>"; };
 		8A1F0212216256E70015650F /* AcknowledgementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgementsViewController.swift; sourceTree = "<group>"; };
+		8A359E5021757175000677DC /* TransparentWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentWindowController.swift; sourceTree = "<group>"; };
 		8A5440992163178500BF3E6A /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5781AA21610BBD005BABE1 /* cai-yun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cai-yun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5781AD21610BBD005BABE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				8A5781AF21610BBD005BABE1 /* MainViewController.swift */,
 				8A1F0212216256E70015650F /* AcknowledgementsViewController.swift */,
 				8AD4964E2163B111009C1B6B /* AboutViewController.swift */,
+				8A359E5021757175000677DC /* TransparentWindowController.swift */,
 			);
 			path = VIewController;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 					8A5781A921610BBD005BABE1 = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
 								enabled = 0;
@@ -241,7 +245,7 @@
 				};
 			};
 			buildConfigurationList = 8A5781A521610BBD005BABE1 /* Build configuration list for PBXProject "cai-yun" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -277,15 +281,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-cai-yun-checkManifestLockResult.txt",
 			);
@@ -299,16 +299,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-cai-yun/Pods-cai-yun-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/YapAnimator/YapAnimator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YapAnimator.framework",
@@ -333,6 +329,7 @@
 				8A1F0213216256E70015650F /* AcknowledgementsViewController.swift in Sources */,
 				8A5781AE21610BBD005BABE1 /* AppDelegate.swift in Sources */,
 				8AD3CB2B2163747F00360D3B /* NSProgressIndicator+ESSProgressIndicatorCategory.m in Sources */,
+				8A359E5121757175000677DC /* TransparentWindowController.swift in Sources */,
 				8A9662432161E882005B5995 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,8 +458,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -478,17 +474,14 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 24XARD42BP;
 				INFOPLIST_FILE = "cai-yun/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "yuxiqian.cai-yun";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "cai-yun/Animator/cai-yun-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -504,16 +497,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 24XARD42BP;
 				INFOPLIST_FILE = "cai-yun/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "yuxiqian.cai-yun";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "cai-yun/Animator/cai-yun-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

@@ -129,17 +129,18 @@ class Color {
     }
     
     func getTitleBarColor() -> CGColor {
-        
-        if #available(OSX 10.14, *) {
-            let appear = NSApplication.shared.effectiveAppearance
-            if appear.name == .aqua {
-                return CGColor(gray: 1.0, alpha: 0.4)
+        /*
+            if #available(OSX 10.14, *) {
+                let appear = NSApplication.shared.effectiveAppearance
+                if appear.name == .aqua {
+                    return CGColor(gray: 1.0, alpha: 0.4)
+                } else {
+                    return CGColor(gray: 0.0, alpha: 0.4)
+                }
             } else {
-                return CGColor(gray: 0.0, alpha: 0.4)
-            }
-        } else {
-            return CGColor(gray: 1.0, alpha: 0.4)
-        }
+         */
+                return CGColor(gray: 1.0, alpha: 0.4)
+            /* } */
     }
     
     func getTitleImage(width: Int, height: Int) -> NSImage {

@@ -11,6 +11,7 @@ import YapAnimator
 
 import SwiftyJSON
 
+
 class MainViewController: NSViewController {
     
     var palettes = [String: [Color]]()
@@ -416,6 +417,7 @@ class MainViewController: NSViewController {
             self.moreMenu.item(at: 5)?.title = (self.currentColor?.getHSLString())!
             self.moreMenu.item(at: 6)?.title = "拷贝十六进制表示： \(self.currentColor?.getHexString() ?? "未知")"
             
+            /*
             if #available(OSX 10.14, *) {
                 if self.currentColor!.shouldShowDark() {
                     self.ringOne.appearance = NSAppearance(named: .darkAqua)
@@ -429,6 +431,7 @@ class MainViewController: NSViewController {
                     self.ringFour.appearance = NSAppearance(named: .aqua)
                 }
             }
+            */
             
             if isRGBAndNotCMYK {
                 // RGB Mode
