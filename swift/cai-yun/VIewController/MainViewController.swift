@@ -433,6 +433,24 @@ class MainViewController: NSViewController {
             }
             */
             
+            if self.currentColor!.shouldShowDark() {
+                self.ringOne.switchDark()
+                self.ringTwo.switchDark()
+                self.ringThree.switchDark()
+                self.ringFour.switchDark()
+//                self.ringTwo.appearance = NSAppearance(named: .darkAqua)
+//                self.ringThree.appearance = NSAppearance(named: .darkAqua)
+//                self.ringFour.appearance = NSAppearance(named: .darkAqua)
+            } else {
+                self.ringOne.switchLight()
+                self.ringTwo.switchLight()
+                self.ringThree.switchLight()
+                self.ringFour.switchLight()
+//                self.ringTwo.appearance = NSAppearance(named: .aqua)
+//                self.ringThree.appearance = NSAppearance(named: .aqua)
+//                self.ringFour.appearance = NSAppearance(named: .aqua)
+            }
+            
             if isRGBAndNotCMYK {
                 // RGB Mode
 //                self.ringTwo.doubleValue = Double((self.currentColor?.red)!)
