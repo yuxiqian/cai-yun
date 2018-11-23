@@ -10,6 +10,4 @@ target 'cai-yun' do
 
   pod 'YapAnimator'
 
-  pod 'SwiftyUserDefaults'
-
 end

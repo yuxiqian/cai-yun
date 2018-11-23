@@ -7,135 +7,134 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		025C76271DE5286B8378F08E85E2FF5B /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED948B594762D066A7A2DFB1E05FBC93 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20F33FD5B6583CF41E8D33518CBDFC29 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AFE638F59E262D940905854A013372 /* Cocoa.framework */; };
-		5D14456E23E2B152B0CC358AD8F8B4B2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AFE638F59E262D940905854A013372 /* Cocoa.framework */; };
-		63500408B2C3D38C892E8D0F50A85E2F /* SwiftyUserDefaults-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 824A6BA0D71B16024A091DA5E6A7B145 /* SwiftyUserDefaults-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66C74E67E9973A241346C48E42C48020 /* SwiftyUserDefaults-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B1CF27F4B128A45D64D9BB80A158EA /* SwiftyUserDefaults-dummy.m */; };
-		6B6B952DC6F86D32E5E8062D6E531EF1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AFE638F59E262D940905854A013372 /* Cocoa.framework */; };
-		6F888BD91B0273BCBC91594AC47744DE /* SwiftyUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6291D6BCB1A0531BFA1F141FA75BA69A /* SwiftyUserDefaults.swift */; };
-		8169B41A5EFD27DBDD591D2CA2283290 /* AnimatableLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529591C8006E56F6402C8C2A264D56F /* AnimatableLayer.swift */; };
-		9479DFC2281A682BCA20BA4C8186FF3A /* YapAnimator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA23F48A2D93A668BF9814FC944751 /* YapAnimator-dummy.m */; };
-		974A1925830A88DC813E0DE0CEC7C707 /* YapAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E6F6D86C0307470BD2174C322F0ADA /* YapAnimator.swift */; };
-		9D309076B8DD252778923693827A666B /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525085473CB92FBF8578906843D71399 /* Animatable.swift */; };
-		AAF6EF86BD76B5331BBA80110E0786E3 /* Pods-cai-yun-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 722812F2553B336C44C8CDE4AAE97816 /* Pods-cai-yun-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD2F2A10DD58FA34108D0DBA4837431A /* Pods-cai-yun-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F294A08CD35088A74D0FAC772E6291 /* Pods-cai-yun-dummy.m */; };
-		B91B7C9461AF6FBAFA3CE425E230DC92 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF0B186F689ADF1A02373BED3218A7E /* SwiftyJSON-dummy.m */; };
-		D6C73B5BB195FC6C8BDC9C752AB5462D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C2C46F880FAA9D9C152A4CB4575EFE /* SwiftyJSON.swift */; };
-		E0E5D114B3C45FF13FE329332BA0045A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AFE638F59E262D940905854A013372 /* Cocoa.framework */; };
-		EB54EB89546F78C0D5C1CEB1F298915A /* YapAnimator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C45BDDC502FFCB6BDA7910EB03AD7548 /* YapAnimator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D0DDD9D8A433A1DEA572FAF9AB983A3 /* Pods-cai-yun-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 722812F2553B336C44C8CDE4AAE97816 /* Pods-cai-yun-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D92CAA0224C22FF7291CFB60A7A8C21 /* AnimatableLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DD847F2473E748E42197D4540F726 /* AnimatableLayer.swift */; };
+		3EA47CC22BD25F7ACEE9A3BDE82BA1C6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AFE638F59E262D940905854A013372 /* Cocoa.framework */; };
+		5B4BF92B5F2434D748DCF122BB494556 /* YapAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428E003D34B56894F1AD05418A0180E /* YapAnimator.swift */; };
+		6A01D5687343BCDE813D87017111A67F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AFE638F59E262D940905854A013372 /* Cocoa.framework */; };
+		8CE7F5800A8B997E046214B06A594F6E /* Pods-cai-yun-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F294A08CD35088A74D0FAC772E6291 /* Pods-cai-yun-dummy.m */; };
+		948ADEFD9DF0FCA2D12A48A5F82A9C83 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1CE5B89792BB48FAA5393932CFF62 /* SwiftyJSON.swift */; };
+		9A661A0DBCBE8E794AB1D4594623790F /* YapAnimator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1892D773429D0027E461A7E089A88D3 /* YapAnimator-dummy.m */; };
+		B75B5A8863708C769D5818D9B7853BEE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AFE638F59E262D940905854A013372 /* Cocoa.framework */; };
+		C155257C080720D422DBAB0AB76F7E5F /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7A586E76D203084836E753162E0E43 /* Animatable.swift */; };
+		C20661D046912754346A56877166E1D9 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DEE176B7F9BFF7C090BF46761FE4CE /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F41713523319C46904467822E305AF8C /* YapAnimator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D853682EEF9F8DEEF2813414C61C224 /* YapAnimator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F611F77092D7CA2D52DFB6F0083EEDC3 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E8C8FB5133A1FC9A3B4AF1C243A7C0 /* SwiftyJSON-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		723028406163BEBDA55DA8A64B143E62 /* PBXContainerItemProxy */ = {
+		40671B829E910068CE13B7163E44A3E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DB2366CB56EFA4AE077767C8E82666B1;
-			remoteInfo = SwiftyUserDefaults;
-		};
-		7A2F90573405A51EDE14F59692563914 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 805A140D3FBE4C180E593C7D12A66D49;
-			remoteInfo = SwiftyJSON;
-		};
-		D3A052D48C7D99B6A308F103E2D87E83 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CAF835C0ABB2995C27536539B4A53C2D;
+			remoteGlobalIDString = EFF1B27DF24930CAAB4CC2550E3F8371;
 			remoteInfo = YapAnimator;
+		};
+		E5B8370BF4F2427DFAA8AC74440BA3C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07D7031A97A9AECB0B988DB36B2F68CF;
+			remoteInfo = SwiftyJSON;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1ED8E5A724B889433B190F57AEEBC0E0 /* Pods_cai_yun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_cai_yun.framework; path = "Pods-cai-yun.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		22B1CF27F4B128A45D64D9BB80A158EA /* SwiftyUserDefaults-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyUserDefaults-dummy.m"; sourceTree = "<group>"; };
-		28E5EDDF9E08F2035ABF39FE8DDB7C54 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		02CFA71CCAC5176008407B6AE11A6FF9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08C2C8ADA13C07DE11898C1045CB5662 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2211176F04C2010B4115CB206C4F93A5 /* YapAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YapAnimator.framework; path = YapAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C4630736A8A0E20AEAB47D52410FD0B /* Pods-cai-yun.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-cai-yun.modulemap"; sourceTree = "<group>"; };
-		3D96AD726D0C91633E82865844A1F528 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FB2FE090B38972296FDE1DAAF6F378F /* SwiftyUserDefaults.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyUserDefaults.modulemap; sourceTree = "<group>"; };
-		46E6F6D86C0307470BD2174C322F0ADA /* YapAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YapAnimator.swift; path = Source/YapAnimator.swift; sourceTree = "<group>"; };
-		4CFFC0EC4866D79703F288200AC209DD /* YapAnimator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YapAnimator.modulemap; sourceTree = "<group>"; };
-		525085473CB92FBF8578906843D71399 /* Animatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animatable.swift; path = Source/Animatable.swift; sourceTree = "<group>"; };
+		41E8C8FB5133A1FC9A3B4AF1C243A7C0 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		448790608D9B7BCB1D154EC5BF638CCC /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		4693D2D290CD23C6713E793D3CFF4A87 /* YapAnimator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YapAnimator-prefix.pch"; sourceTree = "<group>"; };
+		4E5DD847F2473E748E42197D4540F726 /* AnimatableLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatableLayer.swift; path = Source/AnimatableLayer.swift; sourceTree = "<group>"; };
 		5323935EFED0BC738229879B5BA5C9D7 /* Pods-cai-yun-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-cai-yun-resources.sh"; sourceTree = "<group>"; };
 		544B6B8B28E3954F9F194B48427CF9C2 /* Pods-cai-yun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-cai-yun.release.xcconfig"; sourceTree = "<group>"; };
-		6291D6BCB1A0531BFA1F141FA75BA69A /* SwiftyUserDefaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyUserDefaults.swift; path = Sources/SwiftyUserDefaults.swift; sourceTree = "<group>"; };
-		67C2C46F880FAA9D9C152A4CB4575EFE /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		67DF329F1F769A62C6ED3475EC879796 /* SwiftyUserDefaults-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyUserDefaults-prefix.pch"; sourceTree = "<group>"; };
+		5890D4BBCEFF886CF248F8FCEEAC3EF0 /* YapAnimator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YapAnimator.xcconfig; sourceTree = "<group>"; };
 		722812F2553B336C44C8CDE4AAE97816 /* Pods-cai-yun-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-cai-yun-umbrella.h"; sourceTree = "<group>"; };
-		7632AF7ED52D9EED53131DB3B278A572 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		824A6BA0D71B16024A091DA5E6A7B145 /* SwiftyUserDefaults-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyUserDefaults-umbrella.h"; sourceTree = "<group>"; };
-		8651D825941B3BA59630D87503AA86A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B20F48D2216AD22D2F4897426E571D6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D853682EEF9F8DEEF2813414C61C224 /* YapAnimator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YapAnimator-umbrella.h"; sourceTree = "<group>"; };
+		871A978CE03B3D35C45280BDBBDE096E /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
 		88A11EE6D3B3E83DA1556980AB8DDCDD /* Pods-cai-yun-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-cai-yun-acknowledgements.plist"; sourceTree = "<group>"; };
-		8E72A134E2318B489432329C5C3B2D69 /* YapAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YapAnimator.framework; path = YapAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EE07D32AD3DD3AA9122B934D259196A /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9529591C8006E56F6402C8C2A264D56F /* AnimatableLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatableLayer.swift; path = Source/AnimatableLayer.swift; sourceTree = "<group>"; };
-		99407DE1095D0FFCF21517AE47FDFAA6 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AAA23F48A2D93A668BF9814FC944751 /* YapAnimator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YapAnimator-dummy.m"; sourceTree = "<group>"; };
-		AA6258D4889278ABFE161F629F0000DA /* YapAnimator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YapAnimator.xcconfig; sourceTree = "<group>"; };
 		AC6404DB6478DCB0532D0AB46AFCD07B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1045DA4F82951BF783D553A34D0FE62 /* Pods-cai-yun-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-cai-yun-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B568C4369748C404612DDD717860BF11 /* Pods-cai-yun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-cai-yun.debug.xcconfig"; sourceTree = "<group>"; };
-		C0F94F3DA3887960E75A86D978621CDA /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyUserDefaults.framework; path = SwiftyUserDefaults.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C45BDDC502FFCB6BDA7910EB03AD7548 /* YapAnimator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YapAnimator-umbrella.h"; sourceTree = "<group>"; };
-		CEF0B186F689ADF1A02373BED3218A7E /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		D26AEE4CE07EB0034B10DE84DE821425 /* YapAnimator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YapAnimator-prefix.pch"; sourceTree = "<group>"; };
-		D61CF07612FF6B44847630AE22590AB0 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		BFD1CE5B89792BB48FAA5393932CFF62 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		C86E2AB4421CB90388C816FF94AC03A6 /* Pods_cai_yun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_cai_yun.framework; path = "Pods-cai-yun.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9C4AB6C504E2A46A6C518E7E9768C0 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		D1892D773429D0027E461A7E089A88D3 /* YapAnimator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YapAnimator-dummy.m"; sourceTree = "<group>"; };
+		DF0991D7E2716C839E2FCBDE51F10ADA /* YapAnimator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YapAnimator.modulemap; sourceTree = "<group>"; };
+		E2DEE176B7F9BFF7C090BF46761FE4CE /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		E3F294A08CD35088A74D0FAC772E6291 /* Pods-cai-yun-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-cai-yun-dummy.m"; sourceTree = "<group>"; };
 		E521436820985EEA74DB938537B03D4F /* Pods-cai-yun-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-cai-yun-frameworks.sh"; sourceTree = "<group>"; };
-		ED948B594762D066A7A2DFB1E05FBC93 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		ED7A586E76D203084836E753162E0E43 /* Animatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animatable.swift; path = Source/Animatable.swift; sourceTree = "<group>"; };
 		F2AFE638F59E262D940905854A013372 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		F3D316B504F926C4DEF59232EB29307D /* SwiftyUserDefaults.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyUserDefaults.xcconfig; sourceTree = "<group>"; };
+		F428E003D34B56894F1AD05418A0180E /* YapAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YapAnimator.swift; path = Source/YapAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		36D737ABA2A0FABDAC0D0EC2E5E62C04 /* Frameworks */ = {
+		123719768019976EE4FEFE3F0DC08EAB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20F33FD5B6583CF41E8D33518CBDFC29 /* Cocoa.framework in Frameworks */,
+				3EA47CC22BD25F7ACEE9A3BDE82BA1C6 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6EBD24257B173B5B15F3352F3541807B /* Frameworks */ = {
+		1BAC2A8C725148F866B3EDE399C49E51 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0E5D114B3C45FF13FE329332BA0045A /* Cocoa.framework in Frameworks */,
+				6A01D5687343BCDE813D87017111A67F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7860FC396B5A75331C236B8E058397CF /* Frameworks */ = {
+		5B582F9F784DB0A9F1DC1BB00225E947 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D14456E23E2B152B0CC358AD8F8B4B2 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FBF6DCF81777BA7BE692D63558EF22FC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6B6B952DC6F86D32E5E8062D6E531EF1 /* Cocoa.framework in Frameworks */,
+				B75B5A8863708C769D5818D9B7853BEE /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		22223AA3B0258C1C3EFF328B1F821382 /* SwiftyUserDefaults */ = {
+		00FB1D072979810ECABFC26D25D5B54D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6291D6BCB1A0531BFA1F141FA75BA69A /* SwiftyUserDefaults.swift */,
-				E3A7ADEFE04892B96E58C097096DDDA8 /* Support Files */,
+				C86E2AB4421CB90388C816FF94AC03A6 /* Pods_cai_yun.framework */,
+				02CFA71CCAC5176008407B6AE11A6FF9 /* SwiftyJSON.framework */,
+				2211176F04C2010B4115CB206C4F93A5 /* YapAnimator.framework */,
 			);
-			name = SwiftyUserDefaults;
-			path = SwiftyUserDefaults;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B37E9DC0AC7132730BEF1373E36D644 /* YapAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				ED7A586E76D203084836E753162E0E43 /* Animatable.swift */,
+				4E5DD847F2473E748E42197D4540F726 /* AnimatableLayer.swift */,
+				F428E003D34B56894F1AD05418A0180E /* YapAnimator.swift */,
+				F57A668DE64B0B82F6D72C0EEB4296EF /* Support Files */,
+			);
+			name = YapAnimator;
+			path = YapAnimator;
+			sourceTree = "<group>";
+		};
+		10430C687CBFE64F35585C089358E056 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				08C2C8ADA13C07DE11898C1045CB5662 /* Info.plist */,
+				CE9C4AB6C504E2A46A6C518E7E9768C0 /* SwiftyJSON.modulemap */,
+				871A978CE03B3D35C45280BDBBDE096E /* SwiftyJSON.xcconfig */,
+				41E8C8FB5133A1FC9A3B4AF1C243A7C0 /* SwiftyJSON-dummy.m */,
+				448790608D9B7BCB1D154EC5BF638CCC /* SwiftyJSON-prefix.pch */,
+				E2DEE176B7F9BFF7C090BF46761FE4CE /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
 		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
@@ -146,25 +145,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4FEF163D92B129EB47DF9CD3B300A5DD /* Pods */ = {
+		77ACCA9EA7962FC8B1E786DA741E6B04 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CA004475F14C0A43226A7CD3ADEE4DD9 /* SwiftyJSON */,
-				22223AA3B0258C1C3EFF328B1F821382 /* SwiftyUserDefaults */,
-				D66FF18DDA8397B4BE740C72E9EA495B /* YapAnimator */,
+				84F12C10804CD386800155671E4F4FE5 /* SwiftyJSON */,
+				0B37E9DC0AC7132730BEF1373E36D644 /* YapAnimator */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		6C6AE559A1514080ED31AEC3BD908834 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1ED8E5A724B889433B190F57AEEBC0E0 /* Pods_cai_yun.framework */,
-				99407DE1095D0FFCF21517AE47FDFAA6 /* SwiftyJSON.framework */,
-				C0F94F3DA3887960E75A86D978621CDA /* SwiftyUserDefaults.framework */,
-				8E72A134E2318B489432329C5C3B2D69 /* YapAnimator.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -172,60 +159,20 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
-				4FEF163D92B129EB47DF9CD3B300A5DD /* Pods */,
-				6C6AE559A1514080ED31AEC3BD908834 /* Products */,
+				77ACCA9EA7962FC8B1E786DA741E6B04 /* Pods */,
+				00FB1D072979810ECABFC26D25D5B54D /* Products */,
 				FDF7B4C102040B75F6069480948EDC67 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		CA004475F14C0A43226A7CD3ADEE4DD9 /* SwiftyJSON */ = {
+		84F12C10804CD386800155671E4F4FE5 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				67C2C46F880FAA9D9C152A4CB4575EFE /* SwiftyJSON.swift */,
-				D556BDD9E8F561E540AEB291885E0BE2 /* Support Files */,
+				BFD1CE5B89792BB48FAA5393932CFF62 /* SwiftyJSON.swift */,
+				10430C687CBFE64F35585C089358E056 /* Support Files */,
 			);
 			name = SwiftyJSON;
 			path = SwiftyJSON;
-			sourceTree = "<group>";
-		};
-		D556BDD9E8F561E540AEB291885E0BE2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3D96AD726D0C91633E82865844A1F528 /* Info.plist */,
-				28E5EDDF9E08F2035ABF39FE8DDB7C54 /* SwiftyJSON.modulemap */,
-				D61CF07612FF6B44847630AE22590AB0 /* SwiftyJSON.xcconfig */,
-				CEF0B186F689ADF1A02373BED3218A7E /* SwiftyJSON-dummy.m */,
-				8EE07D32AD3DD3AA9122B934D259196A /* SwiftyJSON-prefix.pch */,
-				ED948B594762D066A7A2DFB1E05FBC93 /* SwiftyJSON-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
-			sourceTree = "<group>";
-		};
-		D66FF18DDA8397B4BE740C72E9EA495B /* YapAnimator */ = {
-			isa = PBXGroup;
-			children = (
-				525085473CB92FBF8578906843D71399 /* Animatable.swift */,
-				9529591C8006E56F6402C8C2A264D56F /* AnimatableLayer.swift */,
-				46E6F6D86C0307470BD2174C322F0ADA /* YapAnimator.swift */,
-				DC5BA801D28DBC08F2CD9AA65238D178 /* Support Files */,
-			);
-			name = YapAnimator;
-			path = YapAnimator;
-			sourceTree = "<group>";
-		};
-		DC5BA801D28DBC08F2CD9AA65238D178 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8651D825941B3BA59630D87503AA86A6 /* Info.plist */,
-				4CFFC0EC4866D79703F288200AC209DD /* YapAnimator.modulemap */,
-				AA6258D4889278ABFE161F629F0000DA /* YapAnimator.xcconfig */,
-				9AAA23F48A2D93A668BF9814FC944751 /* YapAnimator-dummy.m */,
-				D26AEE4CE07EB0034B10DE84DE821425 /* YapAnimator-prefix.pch */,
-				C45BDDC502FFCB6BDA7910EB03AD7548 /* YapAnimator-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/YapAnimator";
 			sourceTree = "<group>";
 		};
 		DE3449F3184E778333E6C64071ACB44C /* Pods-cai-yun */ = {
@@ -254,18 +201,18 @@
 			name = "OS X";
 			sourceTree = "<group>";
 		};
-		E3A7ADEFE04892B96E58C097096DDDA8 /* Support Files */ = {
+		F57A668DE64B0B82F6D72C0EEB4296EF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7632AF7ED52D9EED53131DB3B278A572 /* Info.plist */,
-				3FB2FE090B38972296FDE1DAAF6F378F /* SwiftyUserDefaults.modulemap */,
-				F3D316B504F926C4DEF59232EB29307D /* SwiftyUserDefaults.xcconfig */,
-				22B1CF27F4B128A45D64D9BB80A158EA /* SwiftyUserDefaults-dummy.m */,
-				67DF329F1F769A62C6ED3475EC879796 /* SwiftyUserDefaults-prefix.pch */,
-				824A6BA0D71B16024A091DA5E6A7B145 /* SwiftyUserDefaults-umbrella.h */,
+				7B20F48D2216AD22D2F4897426E571D6 /* Info.plist */,
+				DF0991D7E2716C839E2FCBDE51F10ADA /* YapAnimator.modulemap */,
+				5890D4BBCEFF886CF248F8FCEEAC3EF0 /* YapAnimator.xcconfig */,
+				D1892D773429D0027E461A7E089A88D3 /* YapAnimator-dummy.m */,
+				4693D2D290CD23C6713E793D3CFF4A87 /* YapAnimator-prefix.pch */,
+				7D853682EEF9F8DEEF2813414C61C224 /* YapAnimator-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwiftyUserDefaults";
+			path = "../Target Support Files/YapAnimator";
 			sourceTree = "<group>";
 		};
 		FDF7B4C102040B75F6069480948EDC67 /* Targets Support Files */ = {
@@ -279,49 +226,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		231424BA4EC28211D56EB54F2C757D70 /* Headers */ = {
+		3F254DA5C6FE275D1C5C0347EA286B63 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB54EB89546F78C0D5C1CEB1F298915A /* YapAnimator-umbrella.h in Headers */,
+				C20661D046912754346A56877166E1D9 /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79F56A1AB4C07AFA00770DBF370947CC /* Headers */ = {
+		918594ACC2E22E978F2C55731B39FA81 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAF6EF86BD76B5331BBA80110E0786E3 /* Pods-cai-yun-umbrella.h in Headers */,
+				F41713523319C46904467822E305AF8C /* YapAnimator-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C6907AEB0507620D2B8DAE5E71DCB563 /* Headers */ = {
+		AD7B7AA55B22DC8AD69BB0A4A4188020 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63500408B2C3D38C892E8D0F50A85E2F /* SwiftyUserDefaults-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EEB6766DD62E50D4CAF33E6A083412DD /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				025C76271DE5286B8378F08E85E2FF5B /* SwiftyJSON-umbrella.h in Headers */,
+				2D0DDD9D8A433A1DEA572FAF9AB983A3 /* Pods-cai-yun-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		805A140D3FBE4C180E593C7D12A66D49 /* SwiftyJSON */ = {
+		07D7031A97A9AECB0B988DB36B2F68CF /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7D2E4B5BA7B566B73A024C56950987E9 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = F2CB7CCC092B2B418B627D0ADAC7EC31 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				EEB6766DD62E50D4CAF33E6A083412DD /* Headers */,
-				F5E2ED03F8042AF9EB6E2F624C16E44A /* Sources */,
-				7860FC396B5A75331C236B8E058397CF /* Frameworks */,
-				FC51908824AE16734FBEC392C014B720 /* Resources */,
+				3F254DA5C6FE275D1C5C0347EA286B63 /* Headers */,
+				B2226F5EEFB7F5C829C91DFA1F496AEF /* Sources */,
+				123719768019976EE4FEFE3F0DC08EAB /* Frameworks */,
+				F433D3AE414C0E6C0573A0D28405F779 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -329,38 +268,37 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = 99407DE1095D0FFCF21517AE47FDFAA6 /* SwiftyJSON.framework */;
+			productReference = 02CFA71CCAC5176008407B6AE11A6FF9 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9F297A223D66403EBCF192989BE3B9B5 /* Pods-cai-yun */ = {
+		9B884AC7089E33D646B912290361915D /* Pods-cai-yun */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 447B4FAD385343B522D35E604A354C98 /* Build configuration list for PBXNativeTarget "Pods-cai-yun" */;
+			buildConfigurationList = 7A1677361E38E0E5D0F1C11EEB98D1E3 /* Build configuration list for PBXNativeTarget "Pods-cai-yun" */;
 			buildPhases = (
-				79F56A1AB4C07AFA00770DBF370947CC /* Headers */,
-				29236C637674620E817C5A7067F5886B /* Sources */,
-				FBF6DCF81777BA7BE692D63558EF22FC /* Frameworks */,
-				A1A403775261E78459661B3CB309576E /* Resources */,
+				AD7B7AA55B22DC8AD69BB0A4A4188020 /* Headers */,
+				97AA6F6EC65A1DCA12C39418E7CDE445 /* Sources */,
+				1BAC2A8C725148F866B3EDE399C49E51 /* Frameworks */,
+				BAA6863BA52393F9C98196603B3FC5A2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FCDA8B2AA5F0A518B3DCD0D27102FE40 /* PBXTargetDependency */,
-				0B89CF0784FBD23DF0CC50AC3ACEC026 /* PBXTargetDependency */,
-				CC983228034CFBC693172CE7598EBC71 /* PBXTargetDependency */,
+				F2378D2F3D85D63D4F11B1EB3F6ECAC3 /* PBXTargetDependency */,
+				91A985484FAA2A86D729F1D9A8B9AF12 /* PBXTargetDependency */,
 			);
 			name = "Pods-cai-yun";
 			productName = "Pods-cai-yun";
-			productReference = 1ED8E5A724B889433B190F57AEEBC0E0 /* Pods_cai_yun.framework */;
+			productReference = C86E2AB4421CB90388C816FF94AC03A6 /* Pods_cai_yun.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CAF835C0ABB2995C27536539B4A53C2D /* YapAnimator */ = {
+		EFF1B27DF24930CAAB4CC2550E3F8371 /* YapAnimator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3498E06699182375278217110C3DDC19 /* Build configuration list for PBXNativeTarget "YapAnimator" */;
+			buildConfigurationList = E43BF36C6B7F9606501A8935BFE9C590 /* Build configuration list for PBXNativeTarget "YapAnimator" */;
 			buildPhases = (
-				231424BA4EC28211D56EB54F2C757D70 /* Headers */,
-				FCBCCA039828314F5CC2BFC79F7500DE /* Sources */,
-				6EBD24257B173B5B15F3352F3541807B /* Frameworks */,
-				F80FD411C826B6E20D19B9FE75F25C9D /* Resources */,
+				918594ACC2E22E978F2C55731B39FA81 /* Headers */,
+				451F01498469D03E396E3C2B85FA8452 /* Sources */,
+				5B582F9F784DB0A9F1DC1BB00225E947 /* Frameworks */,
+				ED8C3BB893FC38B0CC1ACF7B787E5F74 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -368,25 +306,7 @@
 			);
 			name = YapAnimator;
 			productName = YapAnimator;
-			productReference = 8E72A134E2318B489432329C5C3B2D69 /* YapAnimator.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DB2366CB56EFA4AE077767C8E82666B1 /* SwiftyUserDefaults */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C7E441064EEB008D94501EB1DABBA6BB /* Build configuration list for PBXNativeTarget "SwiftyUserDefaults" */;
-			buildPhases = (
-				C6907AEB0507620D2B8DAE5E71DCB563 /* Headers */,
-				0C794D2475E7DB767F8B3C742B32777D /* Sources */,
-				36D737ABA2A0FABDAC0D0EC2E5E62C04 /* Frameworks */,
-				CB404095F96F0DAABA0BE4D48889587F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiftyUserDefaults;
-			productName = SwiftyUserDefaults;
-			productReference = C0F94F3DA3887960E75A86D978621CDA /* SwiftyUserDefaults.framework */;
+			productReference = 2211176F04C2010B4115CB206C4F93A5 /* YapAnimator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -406,41 +326,33 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 6C6AE559A1514080ED31AEC3BD908834 /* Products */;
+			productRefGroup = 00FB1D072979810ECABFC26D25D5B54D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9F297A223D66403EBCF192989BE3B9B5 /* Pods-cai-yun */,
-				805A140D3FBE4C180E593C7D12A66D49 /* SwiftyJSON */,
-				DB2366CB56EFA4AE077767C8E82666B1 /* SwiftyUserDefaults */,
-				CAF835C0ABB2995C27536539B4A53C2D /* YapAnimator */,
+				9B884AC7089E33D646B912290361915D /* Pods-cai-yun */,
+				07D7031A97A9AECB0B988DB36B2F68CF /* SwiftyJSON */,
+				EFF1B27DF24930CAAB4CC2550E3F8371 /* YapAnimator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A1A403775261E78459661B3CB309576E /* Resources */ = {
+		BAA6863BA52393F9C98196603B3FC5A2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB404095F96F0DAABA0BE4D48889587F /* Resources */ = {
+		ED8C3BB893FC38B0CC1ACF7B787E5F74 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F80FD411C826B6E20D19B9FE75F25C9D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FC51908824AE16734FBEC392C014B720 /* Resources */ = {
+		F433D3AE414C0E6C0573A0D28405F779 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -450,63 +362,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0C794D2475E7DB767F8B3C742B32777D /* Sources */ = {
+		451F01498469D03E396E3C2B85FA8452 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66C74E67E9973A241346C48E42C48020 /* SwiftyUserDefaults-dummy.m in Sources */,
-				6F888BD91B0273BCBC91594AC47744DE /* SwiftyUserDefaults.swift in Sources */,
+				C155257C080720D422DBAB0AB76F7E5F /* Animatable.swift in Sources */,
+				2D92CAA0224C22FF7291CFB60A7A8C21 /* AnimatableLayer.swift in Sources */,
+				9A661A0DBCBE8E794AB1D4594623790F /* YapAnimator-dummy.m in Sources */,
+				5B4BF92B5F2434D748DCF122BB494556 /* YapAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29236C637674620E817C5A7067F5886B /* Sources */ = {
+		97AA6F6EC65A1DCA12C39418E7CDE445 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD2F2A10DD58FA34108D0DBA4837431A /* Pods-cai-yun-dummy.m in Sources */,
+				8CE7F5800A8B997E046214B06A594F6E /* Pods-cai-yun-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5E2ED03F8042AF9EB6E2F624C16E44A /* Sources */ = {
+		B2226F5EEFB7F5C829C91DFA1F496AEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B91B7C9461AF6FBAFA3CE425E230DC92 /* SwiftyJSON-dummy.m in Sources */,
-				D6C73B5BB195FC6C8BDC9C752AB5462D /* SwiftyJSON.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FCBCCA039828314F5CC2BFC79F7500DE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9D309076B8DD252778923693827A666B /* Animatable.swift in Sources */,
-				8169B41A5EFD27DBDD591D2CA2283290 /* AnimatableLayer.swift in Sources */,
-				9479DFC2281A682BCA20BA4C8186FF3A /* YapAnimator-dummy.m in Sources */,
-				974A1925830A88DC813E0DE0CEC7C707 /* YapAnimator.swift in Sources */,
+				F611F77092D7CA2D52DFB6F0083EEDC3 /* SwiftyJSON-dummy.m in Sources */,
+				948ADEFD9DF0FCA2D12A48A5F82A9C83 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0B89CF0784FBD23DF0CC50AC3ACEC026 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftyUserDefaults;
-			target = DB2366CB56EFA4AE077767C8E82666B1 /* SwiftyUserDefaults */;
-			targetProxy = 723028406163BEBDA55DA8A64B143E62 /* PBXContainerItemProxy */;
-		};
-		CC983228034CFBC693172CE7598EBC71 /* PBXTargetDependency */ = {
+		91A985484FAA2A86D729F1D9A8B9AF12 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = YapAnimator;
-			target = CAF835C0ABB2995C27536539B4A53C2D /* YapAnimator */;
-			targetProxy = D3A052D48C7D99B6A308F103E2D87E83 /* PBXContainerItemProxy */;
+			target = EFF1B27DF24930CAAB4CC2550E3F8371 /* YapAnimator */;
+			targetProxy = 40671B829E910068CE13B7163E44A3E4 /* PBXContainerItemProxy */;
 		};
-		FCDA8B2AA5F0A518B3DCD0D27102FE40 /* PBXTargetDependency */ = {
+		F2378D2F3D85D63D4F11B1EB3F6ECAC3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = 805A140D3FBE4C180E593C7D12A66D49 /* SwiftyJSON */;
-			targetProxy = 7A2F90573405A51EDE14F59692563914 /* PBXContainerItemProxy */;
+			target = 07D7031A97A9AECB0B988DB36B2F68CF /* SwiftyJSON */;
+			targetProxy = E5B8370BF4F2427DFAA8AC74440BA3C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -577,7 +474,7 @@
 			};
 			name = Debug;
 		};
-		0AF976525D23F42500D5C70F391E4918 /* Release */ = {
+		27329D7D04A1A28A05898B0CF86B4A5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 544B6B8B28E3954F9F194B48427CF9C2 /* Pods-cai-yun.release.xcconfig */;
 			buildSettings = {
@@ -612,7 +509,71 @@
 			};
 			name = Release;
 		};
-		2361987F1F7350C5D7FA2F2D968FC075 /* Debug */ = {
+		3CBD6F3B69C98F9127F8C1591832551E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 871A978CE03B3D35C45280BDBBDE096E /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3CE4D5C73C4188E6B349F1D7AC6C305D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5890D4BBCEFF886CF248F8FCEEAC3EF0 /* YapAnimator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/YapAnimator/YapAnimator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YapAnimator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/YapAnimator/YapAnimator.modulemap";
+				PRODUCT_MODULE_NAME = YapAnimator;
+				PRODUCT_NAME = YapAnimator;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E84A6BDD2CE7B289E1D8D3BC58DF70C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B568C4369748C404612DDD717860BF11 /* Pods-cai-yun.debug.xcconfig */;
 			buildSettings = {
@@ -642,102 +603,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2727BF942DBF4F3E1742DABA7EFB811B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D61CF07612FF6B44847630AE22590AB0 /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyJSON;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5A3E45FC3F662A5A1111E42D61D1000C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3D316B504F926C4DEF59232EB29307D /* SwiftyUserDefaults.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyUserDefaults/SwiftyUserDefaults-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyUserDefaults/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/SwiftyUserDefaults/SwiftyUserDefaults.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyUserDefaults;
-				PRODUCT_NAME = SwiftyUserDefaults;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		602C8FCAE33427D61933F75C6632E0C0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA6258D4889278ABFE161F629F0000DA /* YapAnimator.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/YapAnimator/YapAnimator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YapAnimator/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/YapAnimator/YapAnimator.modulemap";
-				PRODUCT_MODULE_NAME = YapAnimator;
-				PRODUCT_NAME = YapAnimator;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -805,41 +670,9 @@
 			};
 			name = Release;
 		};
-		754FEBF07C772E293642CE7C90579386 /* Release */ = {
+		B7218AD45F4B12BA36DF8E49F14AD0B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3D316B504F926C4DEF59232EB29307D /* SwiftyUserDefaults.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyUserDefaults/SwiftyUserDefaults-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyUserDefaults/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/SwiftyUserDefaults/SwiftyUserDefaults.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyUserDefaults;
-				PRODUCT_NAME = SwiftyUserDefaults;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8D507BF3BEA6EE2B2CE7895B3FBC6DFF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D61CF07612FF6B44847630AE22590AB0 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 871A978CE03B3D35C45280BDBBDE096E /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -867,11 +700,11 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		EF54BA58A2AAD58FD9F171AE9CAEB81A /* Release */ = {
+		D46D641BBAF47346CEE4ED64D0709156 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA6258D4889278ABFE161F629F0000DA /* YapAnimator.xcconfig */;
+			baseConfigurationReference = 5890D4BBCEFF886CF248F8FCEEAC3EF0 /* YapAnimator.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -913,38 +746,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3498E06699182375278217110C3DDC19 /* Build configuration list for PBXNativeTarget "YapAnimator" */ = {
+		7A1677361E38E0E5D0F1C11EEB98D1E3 /* Build configuration list for PBXNativeTarget "Pods-cai-yun" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				602C8FCAE33427D61933F75C6632E0C0 /* Debug */,
-				EF54BA58A2AAD58FD9F171AE9CAEB81A /* Release */,
+				5E84A6BDD2CE7B289E1D8D3BC58DF70C /* Debug */,
+				27329D7D04A1A28A05898B0CF86B4A5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		447B4FAD385343B522D35E604A354C98 /* Build configuration list for PBXNativeTarget "Pods-cai-yun" */ = {
+		E43BF36C6B7F9606501A8935BFE9C590 /* Build configuration list for PBXNativeTarget "YapAnimator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2361987F1F7350C5D7FA2F2D968FC075 /* Debug */,
-				0AF976525D23F42500D5C70F391E4918 /* Release */,
+				3CE4D5C73C4188E6B349F1D7AC6C305D /* Debug */,
+				D46D641BBAF47346CEE4ED64D0709156 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7D2E4B5BA7B566B73A024C56950987E9 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+		F2CB7CCC092B2B418B627D0ADAC7EC31 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2727BF942DBF4F3E1742DABA7EFB811B /* Debug */,
-				8D507BF3BEA6EE2B2CE7895B3FBC6DFF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C7E441064EEB008D94501EB1DABBA6BB /* Build configuration list for PBXNativeTarget "SwiftyUserDefaults" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5A3E45FC3F662A5A1111E42D61D1000C /* Debug */,
-				754FEBF07C772E293642CE7C90579386 /* Release */,
+				B7218AD45F4B12BA36DF8E49F14AD0B0 /* Debug */,
+				3CBD6F3B69C98F9127F8C1591832551E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

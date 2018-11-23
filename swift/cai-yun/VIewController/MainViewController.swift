@@ -510,8 +510,6 @@ class MainViewController: NSViewController, updatePrefDelegate {
         case .light:
             titleText.textColor = NSColor.black
             break
-        default:
-            return
         }
     }
     

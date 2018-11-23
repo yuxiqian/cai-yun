@@ -25,7 +25,6 @@
 		8A9662402161E3E2005B5995 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A96623F2161E3E2005B5995 /* Utilities.swift */; };
 		8A9662432161E882005B5995 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9662422161E882005B5995 /* Constants.swift */; };
 		8AA8848621A7CE0D0008D12C /* PrefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA8848521A7CE0D0008D12C /* PrefViewController.swift */; };
-		8AACE45921A7D6320076A5EB /* DefaultsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AACE45A21A7D6320076A5EB /* DefaultsKit.framework */; };
 		8AAF101521A7FC38003ECE2D /* dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AAF101221A7FC38003ECE2D /* dark.png */; };
 		8AAF101621A7FC38003ECE2D /* light.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AAF101321A7FC38003ECE2D /* light.png */; };
 		8AAF101721A7FC38003ECE2D /* transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AAF101421A7FC38003ECE2D /* transparent.png */; };
@@ -100,7 +99,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AACE45921A7D6320076A5EB /* DefaultsKit.framework in Frameworks */,
 				8AB96EE921631B2800629C67 /* YapAnimator.framework in Frameworks */,
 				8A54409A2163178500BF3E6A /* SwiftyJSON.framework in Frameworks */,
 				ADB946E89714F2431AEA5EC4 /* Pods_cai_yun.framework in Frameworks */,
@@ -338,13 +336,11 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-cai-yun/Pods-cai-yun-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
 				"${BUILT_PRODUCTS_DIR}/YapAnimator/YapAnimator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YapAnimator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
