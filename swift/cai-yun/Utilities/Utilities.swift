@@ -13,7 +13,10 @@ func getRandom(_ min: Int, _ max: Int) -> Int {
     return min + Int(arc4random_uniform(UInt32(max - min + 1)))
 }
 
-func getFont(_ points: Points) -> NSFont? {
+func getFont(_ points: Points, _ fallback: Bool) -> NSFont? {
+    if fallback {
+        return NSFont(name: "PingFangSC-Regular", size: CGFloat(points.rawValue))
+    }
     return NSFont(name: "SourceHanSerifCN-Light", size: CGFloat(points.rawValue))
 }
 

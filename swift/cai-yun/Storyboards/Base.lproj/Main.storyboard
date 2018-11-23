@@ -1651,10 +1651,10 @@ DQ
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="J5Q-hR-gO9">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="443" y="240" width="180" height="180"/>
+                        <rect key="contentRect" x="443" y="240" width="239" height="226"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
-                        <value key="minSize" type="size" width="180" height="180"/>
-                        <value key="maxSize" type="size" width="180" height="180"/>
+                        <value key="minSize" type="size" width="239" height="226"/>
+                        <value key="maxSize" type="size" width="239" height="226"/>
                         <connections>
                             <outlet property="delegate" destination="zZs-bv-hJV" id="Jhn-bD-x1d"/>
                         </connections>
@@ -1672,22 +1672,11 @@ DQ
             <objects>
                 <viewController title="偏好设置" id="rOh-qv-PUr" customClass="PrefViewController" customModule="cai_yun" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="wjf-IM-BiB" customClass="NSVisualEffectView">
-                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                        <rect key="frame" x="0.0" y="0.0" width="239" height="226"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4gQ-gk-gPZ">
-                                <rect key="frame" x="14" y="5" width="72" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <buttonCell key="cell" type="push" title="好" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="itS-5Y-suG">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="OKAndClose:" target="1F4-q9-Twe" id="K9U-8f-ueA"/>
-                                </connections>
-                            </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mAQ-1N-m3E">
-                                <rect key="frame" x="18" y="41" width="142" height="18"/>
+                                <rect key="frame" x="18" y="50" width="142" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="check" title="用「思源宋体」显示" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="RD6-TC-FSQ">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -1697,26 +1686,15 @@ DQ
                                     <action selector="switchFont:" target="rOh-qv-PUr" id="oGE-6o-rjt"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UAe-08-RJV">
-                                <rect key="frame" x="94" y="5" width="72" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <buttonCell key="cell" type="push" title="取消" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9bA-xM-3Wn">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="Cancel:" target="1F4-q9-Twe" id="wBh-t9-ojq"/>
-                                </connections>
-                            </button>
                             <box fixedFrame="YES" title="标题栏样式" translatesAutoresizingMaskIntoConstraints="NO" id="BLI-Oc-Z88">
-                                <rect key="frame" x="17" y="64" width="144" height="96"/>
+                                <rect key="frame" x="17" y="70" width="205" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" id="4aI-ET-KKs">
-                                    <rect key="frame" x="2" y="2" width="140" height="79"/>
+                                    <rect key="frame" x="2" y="2" width="201" height="119"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CdW-Hl-Z19">
-                                            <rect key="frame" x="12" y="53" width="57" height="18"/>
+                                            <rect key="frame" x="12" y="93" width="57" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="radio" title="暗色" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="6tn-xU-utp">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -1726,19 +1704,8 @@ DQ
                                                 <action selector="switchTitleStyle:" target="rOh-qv-PUr" id="Lh8-Db-yPh"/>
                                             </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OaL-e1-AgP">
-                                            <rect key="frame" x="12" y="31" width="57" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="radio" title="亮色" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="njS-Ez-cnE">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                            <connections>
-                                                <action selector="switchTitleStyle:" target="rOh-qv-PUr" id="Zrx-Pm-yst"/>
-                                            </connections>
-                                        </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zhY-X9-LfS">
-                                            <rect key="frame" x="12" y="9" width="57" height="18"/>
+                                            <rect key="frame" x="134" y="93" width="57" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="radio" title="透明" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="gWA-Gy-AOx">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -1748,9 +1715,50 @@ DQ
                                                 <action selector="switchTitleStyle:" target="rOh-qv-PUr" id="wVi-Ic-8ab"/>
                                             </connections>
                                         </button>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OaL-e1-AgP">
+                                            <rect key="frame" x="73" y="93" width="57" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="radio" title="亮色" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="njS-Ez-cnE">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="switchTitleStyle:" target="rOh-qv-PUr" id="Zrx-Pm-yst"/>
+                                            </connections>
+                                        </button>
+                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cqu-Ze-Fsd">
+                                            <rect key="frame" x="13" y="14" width="176" height="72"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="topLeft" image="dark" id="Bx2-dN-XOe"/>
+                                        </imageView>
                                     </subviews>
                                 </view>
                             </box>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4gQ-gk-gPZ">
+                                <rect key="frame" x="101" y="13" width="54" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="好" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="itS-5Y-suG">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="OKAndClose:" target="1F4-q9-Twe" id="K9U-8f-ueA"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UAe-08-RJV">
+                                <rect key="frame" x="153" y="13" width="72" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="取消" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9bA-xM-3Wn">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="Cancel:" target="1F4-q9-Twe" id="wBh-t9-ojq"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
@@ -1758,16 +1766,18 @@ DQ
                         <outlet property="radioButtonA" destination="CdW-Hl-Z19" id="dae-XL-EbZ"/>
                         <outlet property="radioButtonB" destination="OaL-e1-AgP" id="vC9-tL-geC"/>
                         <outlet property="radioButtonC" destination="zhY-X9-LfS" id="tFx-OG-mzq"/>
+                        <outlet property="sampleCell" destination="cqu-Ze-Fsd" id="YBu-8n-52D"/>
                     </connections>
                 </viewController>
                 <customObject id="1F4-q9-Twe" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController id="RJa-KL-hqu"/>
             </objects>
-            <point key="canvasLocation" x="-796" y="718"/>
+            <point key="canvasLocation" x="-839.5" y="755"/>
         </scene>
     </scenes>
     <resources>
         <image name="NSAddTemplate" width="11" height="11"/>
         <image name="NSApplicationIcon" width="128" height="128"/>
+        <image name="dark" width="363" height="288"/>
     </resources>
 </document>

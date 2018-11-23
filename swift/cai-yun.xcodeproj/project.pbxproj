@@ -26,6 +26,12 @@
 		8A9662432161E882005B5995 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9662422161E882005B5995 /* Constants.swift */; };
 		8AA8848621A7CE0D0008D12C /* PrefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA8848521A7CE0D0008D12C /* PrefViewController.swift */; };
 		8AACE45921A7D6320076A5EB /* DefaultsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AACE45A21A7D6320076A5EB /* DefaultsKit.framework */; };
+		8AAF101521A7FC38003ECE2D /* dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AAF101221A7FC38003ECE2D /* dark.png */; };
+		8AAF101621A7FC38003ECE2D /* light.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AAF101321A7FC38003ECE2D /* light.png */; };
+		8AAF101721A7FC38003ECE2D /* transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AAF101421A7FC38003ECE2D /* transparent.png */; };
+		8AAF101821A7FC52003ECE2D /* dark.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AAF101221A7FC38003ECE2D /* dark.png */; };
+		8AAF101921A7FC52003ECE2D /* light.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AAF101321A7FC38003ECE2D /* light.png */; };
+		8AAF101A21A7FC52003ECE2D /* transparent.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AAF101421A7FC38003ECE2D /* transparent.png */; };
 		8AB96EE921631B2800629C67 /* YapAnimator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB96EE821631B2800629C67 /* YapAnimator.framework */; };
 		8AC43F642162F57600FE06B9 /* metro_line_colors.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AC43F632162F57600FE06B9 /* metro_line_colors.json */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8AD3CB2B2163747F00360D3B /* NSProgressIndicator+ESSProgressIndicatorCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD3CB2A2163747F00360D3B /* NSProgressIndicator+ESSProgressIndicatorCategory.m */; };
@@ -40,6 +46,9 @@
 			dstPath = resources;
 			dstSubfolderSpec = 7;
 			files = (
+				8AAF101821A7FC52003ECE2D /* dark.png in CopyFiles */,
+				8AAF101921A7FC52003ECE2D /* light.png in CopyFiles */,
+				8AAF101A21A7FC52003ECE2D /* transparent.png in CopyFiles */,
 				8A85EA462170DD13005B5766 /* github_colors.json in CopyFiles */,
 				8AC43F642162F57600FE06B9 /* metro_line_colors.json in CopyFiles */,
 				8A94EF432161B8C900BE4355 /* nippon_colors.json in CopyFiles */,
@@ -75,6 +84,9 @@
 		8A9662422161E882005B5995 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8AA8848521A7CE0D0008D12C /* PrefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefViewController.swift; sourceTree = "<group>"; };
 		8AACE45A21A7D6320076A5EB /* DefaultsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DefaultsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AAF101221A7FC38003ECE2D /* dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dark.png; sourceTree = "<group>"; };
+		8AAF101321A7FC38003ECE2D /* light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light.png; sourceTree = "<group>"; };
+		8AAF101421A7FC38003ECE2D /* transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparent.png; sourceTree = "<group>"; };
 		8AB96EE821631B2800629C67 /* YapAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YapAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC43F632162F57600FE06B9 /* metro_line_colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = metro_line_colors.json; path = ../palette/metro_line_colors.json; sourceTree = "<group>"; };
 		8AD3CB292163747F00360D3B /* NSProgressIndicator+ESSProgressIndicatorCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSProgressIndicator+ESSProgressIndicatorCategory.h"; sourceTree = "<group>"; };
@@ -146,6 +158,7 @@
 				8A929AA12161C9DB00179F65 /* cai-yun.entitlements */,
 				8A5781B621610BBE005BABE1 /* Info.plist */,
 				8A5781B121610BBE005BABE1 /* Assets.xcassets */,
+				8AAF101121A7FBED003ECE2D /* Resources */,
 				8A929A9F2161C8BC00179F65 /* Storyboards */,
 				8A1F020A21624C400015650F /* Animator */,
 				8A929AA02161C8C900179F65 /* Palette */,
@@ -193,6 +206,16 @@
 				8A9662422161E882005B5995 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8AAF101121A7FBED003ECE2D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8AAF101221A7FC38003ECE2D /* dark.png */,
+				8AAF101321A7FC38003ECE2D /* light.png */,
+				8AAF101421A7FC38003ECE2D /* transparent.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		D126BC9308B1364D1A49119A /* Frameworks */ = {
@@ -277,7 +300,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AAF101721A7FC38003ECE2D /* transparent.png in Resources */,
+				8AAF101621A7FC38003ECE2D /* light.png in Resources */,
 				8A5781B221610BBE005BABE1 /* Assets.xcassets in Resources */,
+				8AAF101521A7FC38003ECE2D /* dark.png in Resources */,
 				8A5781B521610BBE005BABE1 /* Main.storyboard in Resources */,
 				8A85EA452170DD0B005B5766 /* github_colors.json in Resources */,
 			);
@@ -312,11 +338,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-cai-yun/Pods-cai-yun-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
 				"${BUILT_PRODUCTS_DIR}/YapAnimator/YapAnimator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YapAnimator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

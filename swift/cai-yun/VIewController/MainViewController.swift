@@ -12,7 +12,7 @@ import YapAnimator
 import SwiftyJSON
 
 
-class MainViewController: NSViewController {
+class MainViewController: NSViewController, updatePrefDelegate {
     
     var palettes = [String: [Color]]()
     var currentPalette: [Color] = []
@@ -23,6 +23,10 @@ class MainViewController: NSViewController {
     
     var moreMenu = NSMenu()
     var paletteMenu = NSMenu()
+    
+    var titleTheme: titleStyle = .transparent
+    
+    let userDefaults = UserDefaults.standard
     
     override func viewDidLoad() {
         
@@ -57,6 +61,8 @@ class MainViewController: NSViewController {
         
         loadPalette()
         
+        updatePreference()
+        
     }
 
     override var representedObject: Any? {
@@ -84,14 +90,8 @@ class MainViewController: NSViewController {
     }
     
     override func viewWillLayout() {
-
-        
-        self.titleShadowBar.layer?.backgroundColor = self.currentColor!.getTitleBarColor()
-
-        
+        setColorDisplay()
         updateConstraints()
-        
-        
     }
     
     
@@ -370,9 +370,9 @@ class MainViewController: NSViewController {
         self.isNextTap = false
     }
     
-    func setFont() {
-        self.mainNameTitle.font = getFont(.mainName)
-        self.aliasNameTitle.font = getFont(.aliasName)
+    func setFont(_ fallback: Bool = false) {
+        self.mainNameTitle.font = getFont(.mainName, fallback)
+        self.aliasNameTitle.font = getFont(.aliasName, fallback)
     }
     
     
@@ -493,14 +493,25 @@ class MainViewController: NSViewController {
             
             self.imageWrapper.animated?.opacity.animate(to: 0.0)
 
-            
-//
-            
-//            self.titleShadowBar.animated?.backgroundColor.animate(to: self.currentColor!.getAccentColor())
-//
-            self.titleShadowBar.layer?.backgroundColor = self.currentColor!.getTitleBarColor()
-//            self.titleShadowBar.image = self.currentColor!.getTitleImage(width: Int(self.view.frame.width), height: 20)
-            
+            updateTitleColor()
+
+        }
+    }
+    
+    func updateTitleColor() {
+        self.titleShadowBar.layer?.backgroundColor = getTitleBarColor(titleTheme).cgColor
+        switch titleTheme {
+        case .transparent:
+            titleText.textColor = currentColor?.getTextColor()
+            break
+        case .dark:
+            titleText.textColor = NSColor.white
+            break
+        case .light:
+            titleText.textColor = NSColor.black
+            break
+        default:
+            return
         }
     }
     
@@ -560,15 +571,31 @@ class MainViewController: NSViewController {
         let prefPanelController = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("Preference Panel Controller")) as! NSWindowController
         
         if let prefPanel = prefPanelController.window {
-            self.view.window?.beginSheet(prefPanel, completionHandler: { response in
-                DispatchQueue.main.async(execute: {
-                    self.updatePreferences()
-                })
-            })
+            let prefViewCon = prefPanel.contentViewController as! PrefViewController
+            prefViewCon.delegate = self
+            self.view.window?.beginSheet(prefPanel, completionHandler: nil)
         }
     }
     
-    func updatePreferences() {
+    func updatePreference() {
+        NSLog("call pref update")
+        let styleID = userDefaults.integer(forKey: PreferenceKey.titleStyleTheme)
+        let style = titleStyle(rawValue: styleID)
+
+        let isSourceFont = userDefaults.bool(forKey: PreferenceKey.useSourceFont)
         
+        if isSourceFont {
+            setFont()
+        } else {
+            setFont(true)
+            NSLog("set fallback font")
+        }
+        titleTheme = style!
+        updateTitleColor()
     }
+}
+
+
+protocol updatePrefDelegate: NSObjectProtocol {
+    func updatePreference() -> ()
 }

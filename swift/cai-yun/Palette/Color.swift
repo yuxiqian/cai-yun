@@ -127,21 +127,7 @@ class Color {
                        blue: suitableColor(self.blue),
                        alpha: 1.0)
     }
-    
-    func getTitleBarColor() -> CGColor {
-        /*
-            if #available(OSX 10.14, *) {
-                let appear = NSApplication.shared.effectiveAppearance
-                if appear.name == .aqua {
-                    return CGColor(gray: 1.0, alpha: 0.4)
-                } else {
-                    return CGColor(gray: 0.0, alpha: 0.4)
-                }
-            } else {
-         */
-                return CGColor(gray: 1.0, alpha: 0.4)
-            /* } */
-    }
+
     
     func getTitleImage(width: Int, height: Int) -> NSImage {
         let deepColor = NSColor(calibratedRed: suitableColor(self.red),
@@ -149,5 +135,30 @@ class Color {
                        blue: suitableColor(self.blue),
                        alpha: 1.0)
         return NSImage(color: deepColor, size: NSSize(width: width, height: height))
+    }
+}
+
+
+func getTitleBarColor(_ style: titleStyle) -> NSColor {
+    /*
+     if #available(OSX 10.14, *) {
+     let appear = NSApplication.shared.effectiveAppearance
+     if appear.name == .aqua {
+     return CGColor(gray: 1.0, alpha: 0.4)
+     } else {
+     return CGColor(gray: 0.0, alpha: 0.4)
+     }
+     } else {
+     */
+    //                return CGColor(gray: 1.0, alpha: 0.4)
+    /* } */
+    NSLog("eat style \(style)")
+    switch style {
+    case .light:
+        return NSColor(white: 1.0, alpha: 0.4)
+    case .dark:
+        return NSColor(white: 0.0, alpha: 0.4)
+    case .transparent:
+        return NSColor(white: 0.0, alpha: 0.0)
     }
 }

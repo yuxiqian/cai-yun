@@ -8,16 +8,61 @@
 
 import Cocoa
 
+
 class PrefViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+        registerDefaultPrefs()
         loadPref()
-        if isSourceFount! {
-            self.checkBox.state = .on
+        setUI()
+        
+    }
+    
+    weak var delegate: updatePrefDelegate?
+    
+    var currentStyle: titleStyle?
+    var isSourceFont: Bool?
+    
+    let userDefaults = UserDefaults.standard
+    
+    let fileName: [String] = ["dark", "light", "transparent"]
+    
+    @IBOutlet weak var checkBox: NSButton!
+    @IBOutlet weak var radioButtonA: NSButton!
+    @IBOutlet weak var radioButtonB: NSButton!
+    @IBOutlet weak var radioButtonC: NSButton!
+    @IBOutlet weak var sampleCell: NSImageView!
+    
+    fileprivate func registerDefaultPrefs() {
+        let defaultPreferences: [String: Any] = [
+            PreferenceKey.titleStyleTheme: titleStyle.light.rawValue,
+            PreferenceKey.useSourceFont: true,
+            ]
+        userDefaults.register(defaults: defaultPreferences)
+    }
+    
+//    
+    fileprivate func loadPref() {
+        if let style = titleStyle.init(rawValue: userDefaults.integer(forKey: PreferenceKey.titleStyleTheme)) {
+            currentStyle = style
         } else {
-            self.checkBox.state = .off
+            currentStyle = .light
+        }
+        isSourceFont = userDefaults.bool(forKey: PreferenceKey.useSourceFont)
+    }
+    
+    fileprivate func savePrefs() {
+        userDefaults.set(currentStyle?.rawValue, forKey: PreferenceKey.titleStyleTheme)
+        userDefaults.set(isSourceFont, forKey: PreferenceKey.useSourceFont)
+    }
+    
+    fileprivate func setUI() {
+        if isSourceFont! {
+            checkBox.state = .on
+        } else {
+            checkBox.state = .off
         }
         
         switch currentStyle {
@@ -33,43 +78,17 @@ class PrefViewController: NSViewController {
         default:
             break
         }
+        updateExample()
     }
     
-    let defaults = Defaults()
-    let titleKey = Key<titleStyle>("titleKey")
-    let fontKey = Key<Bool>("fontKey")
-    
-    var currentStyle: titleStyle?
-    var isSourceFount: Bool?
-    
-    
-    @IBOutlet weak var checkBox: NSButton!
-    @IBOutlet weak var radioButtonA: NSButton!
-    @IBOutlet weak var radioButtonB: NSButton!
-    @IBOutlet weak var radioButtonC: NSButton!
-    
-    func loadPref() {
-        if defaults.has(titleKey) {
-            currentStyle = defaults.get(for: titleKey)
-        } else {
-            defaults.set(.light, for: titleKey)
-            currentStyle = .light
-        }
-        
-        if defaults.has(fontKey) {
-            isSourceFount = defaults.get(for: fontKey)
-        } else {
-            defaults.set(true, for: fontKey)
-            isSourceFount = true
-        }
-    }
-    
-    func savePref() {
-        defaults.set(currentStyle!, for: titleKey)
-        defaults.set(isSourceFount!, for: fontKey)
+    fileprivate func updateExample() {
+        let path = Bundle.main.path(forResource: "resources/\(fileName[(currentStyle?.rawValue)!])", ofType: "png")
+        let imgData = NSImage(data: NSData(contentsOfFile: path!)! as Data)
+        sampleCell.image = imgData
     }
     
     @IBAction func switchTitleStyle(_ sender: NSButton) {
+        
         switch sender.title {
         case "暗色":
             currentStyle = .dark
@@ -83,19 +102,22 @@ class PrefViewController: NSViewController {
         default:
             return
         }
+        
+        updateExample()
     }
     
     @IBAction func switchFont(_ sender: NSButton) {
-        isSourceFount = (sender.state == .on)
+        isSourceFont = (sender.state == .on)
     }
     
     @IBAction func OKAndClose(_ sender: NSButton) {
-        savePref()
-        self.view.window?.performClose(self)
+        savePrefs()
+        self.delegate?.updatePreference()
+        self.view.window?.close()
     }
     
     @IBAction func Cancel(_ sender: NSButton) {
-        self.view.window?.performClose(self)
+        self.view.window?.close()
     }
 }
 
@@ -104,3 +126,11 @@ enum titleStyle: Int {
     case light = 1
     case transparent = 2
 }
+
+
+struct PreferenceKey {
+    static let titleStyleTheme = "titleStyleTheme"
+    static let useSourceFont = "useSourceFont"
+}
+
+
