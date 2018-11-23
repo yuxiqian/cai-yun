@@ -24,6 +24,8 @@
 		8A94EF442161B8C900BE4355 /* chinese_colors.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A94EF422161B8C900BE4355 /* chinese_colors.json */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8A9662402161E3E2005B5995 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A96623F2161E3E2005B5995 /* Utilities.swift */; };
 		8A9662432161E882005B5995 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9662422161E882005B5995 /* Constants.swift */; };
+		8AA8848621A7CE0D0008D12C /* PrefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA8848521A7CE0D0008D12C /* PrefViewController.swift */; };
+		8AACE45921A7D6320076A5EB /* DefaultsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AACE45A21A7D6320076A5EB /* DefaultsKit.framework */; };
 		8AB96EE921631B2800629C67 /* YapAnimator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB96EE821631B2800629C67 /* YapAnimator.framework */; };
 		8AC43F642162F57600FE06B9 /* metro_line_colors.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AC43F632162F57600FE06B9 /* metro_line_colors.json */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8AD3CB2B2163747F00360D3B /* NSProgressIndicator+ESSProgressIndicatorCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD3CB2A2163747F00360D3B /* NSProgressIndicator+ESSProgressIndicatorCategory.m */; };
@@ -71,6 +73,8 @@
 		8A94EF422161B8C900BE4355 /* chinese_colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = chinese_colors.json; path = ../palette/chinese_colors.json; sourceTree = "<group>"; };
 		8A96623F2161E3E2005B5995 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		8A9662422161E882005B5995 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8AA8848521A7CE0D0008D12C /* PrefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefViewController.swift; sourceTree = "<group>"; };
+		8AACE45A21A7D6320076A5EB /* DefaultsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DefaultsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AB96EE821631B2800629C67 /* YapAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YapAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC43F632162F57600FE06B9 /* metro_line_colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = metro_line_colors.json; path = ../palette/metro_line_colors.json; sourceTree = "<group>"; };
 		8AD3CB292163747F00360D3B /* NSProgressIndicator+ESSProgressIndicatorCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSProgressIndicator+ESSProgressIndicatorCategory.h"; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AACE45921A7D6320076A5EB /* DefaultsKit.framework in Frameworks */,
 				8AB96EE921631B2800629C67 /* YapAnimator.framework in Frameworks */,
 				8A54409A2163178500BF3E6A /* SwiftyJSON.framework in Frameworks */,
 				ADB946E89714F2431AEA5EC4 /* Pods_cai_yun.framework in Frameworks */,
@@ -159,6 +164,7 @@
 				8AD4964E2163B111009C1B6B /* AboutViewController.swift */,
 				8A359E5021757175000677DC /* TransparentWindowController.swift */,
 				8A644817219EF9C7006EAA7E /* DarkLightProgressIndicator.swift */,
+				8AA8848521A7CE0D0008D12C /* PrefViewController.swift */,
 			);
 			path = VIewController;
 			sourceTree = "<group>";
@@ -192,6 +198,7 @@
 		D126BC9308B1364D1A49119A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8AACE45A21A7D6320076A5EB /* DefaultsKit.framework */,
 				8AB96EE821631B2800629C67 /* YapAnimator.framework */,
 				8A5440992163178500BF3E6A /* SwiftyJSON.framework */,
 				B8CBBB71A072EA54C18DE9DF /* Pods_cai_yun.framework */,
@@ -335,6 +342,7 @@
 				8AD3CB2B2163747F00360D3B /* NSProgressIndicator+ESSProgressIndicatorCategory.m in Sources */,
 				8A359E5121757175000677DC /* TransparentWindowController.swift in Sources */,
 				8A9662432161E882005B5995 /* Constants.swift in Sources */,
+				8AA8848621A7CE0D0008D12C /* PrefViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

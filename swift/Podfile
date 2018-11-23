@@ -1,4 +1,3 @@
-
 platform :macos, '10.12'
 
 target 'cai-yun' do
@@ -10,5 +9,6 @@ target 'cai-yun' do
   pod 'SwiftyJSON', "4.2.0"
 
   pod 'YapAnimator'
+
 
 end

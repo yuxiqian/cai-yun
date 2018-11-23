@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,9 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02CFA71CCAC5176008407B6AE11A6FF9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02CFA71CCAC5176008407B6AE11A6FF9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C2C8ADA13C07DE11898C1045CB5662 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2211176F04C2010B4115CB206C4F93A5 /* YapAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YapAnimator.framework; path = YapAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2211176F04C2010B4115CB206C4F93A5 /* YapAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YapAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C4630736A8A0E20AEAB47D52410FD0B /* Pods-cai-yun.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-cai-yun.modulemap"; sourceTree = "<group>"; };
 		41E8C8FB5133A1FC9A3B4AF1C243A7C0 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		448790608D9B7BCB1D154EC5BF638CCC /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
@@ -56,12 +56,12 @@
 		7D853682EEF9F8DEEF2813414C61C224 /* YapAnimator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YapAnimator-umbrella.h"; sourceTree = "<group>"; };
 		871A978CE03B3D35C45280BDBBDE096E /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
 		88A11EE6D3B3E83DA1556980AB8DDCDD /* Pods-cai-yun-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-cai-yun-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AC6404DB6478DCB0532D0AB46AFCD07B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1045DA4F82951BF783D553A34D0FE62 /* Pods-cai-yun-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-cai-yun-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B568C4369748C404612DDD717860BF11 /* Pods-cai-yun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-cai-yun.debug.xcconfig"; sourceTree = "<group>"; };
 		BFD1CE5B89792BB48FAA5393932CFF62 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		C86E2AB4421CB90388C816FF94AC03A6 /* Pods_cai_yun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_cai_yun.framework; path = "Pods-cai-yun.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86E2AB4421CB90388C816FF94AC03A6 /* Pods_cai_yun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cai_yun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9C4AB6C504E2A46A6C518E7E9768C0 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		D1892D773429D0027E461A7E089A88D3 /* YapAnimator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YapAnimator-dummy.m"; sourceTree = "<group>"; };
 		DF0991D7E2716C839E2FCBDE51F10ADA /* YapAnimator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YapAnimator.modulemap; sourceTree = "<group>"; };
@@ -119,7 +119,6 @@
 				F428E003D34B56894F1AD05418A0180E /* YapAnimator.swift */,
 				F57A668DE64B0B82F6D72C0EEB4296EF /* Support Files */,
 			);
-			name = YapAnimator;
 			path = YapAnimator;
 			sourceTree = "<group>";
 		};
@@ -171,7 +170,6 @@
 				BFD1CE5B89792BB48FAA5393932CFF62 /* SwiftyJSON.swift */,
 				10430C687CBFE64F35585C089358E056 /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};

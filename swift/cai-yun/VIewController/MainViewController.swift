@@ -28,7 +28,6 @@ class MainViewController: NSViewController {
         
         super.viewDidLoad()
         
-        self.view.window?.isMovableByWindowBackground = true
         
         self.titleShadowBar.wantsLayer = true
         
@@ -97,6 +96,7 @@ class MainViewController: NSViewController {
     
     
     @IBOutlet weak var titleShadowBar: NSImageView!
+    @IBOutlet weak var titleText: NSTextField!
     @IBOutlet weak var mainNameTitle: NSTextField!
     @IBOutlet weak var aliasNameTitle: NSTextField!
     
@@ -553,5 +553,22 @@ class MainViewController: NSViewController {
             moreMenu.item(at: 0)?.isHidden = false
             moreMenu.item(at: 4)?.isHidden = false
         }
+    }
+    
+    @IBAction func openPreferencePanel(_ sender: Any) {
+        let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
+        let prefPanelController = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("Preference Panel Controller")) as! NSWindowController
+        
+        if let prefPanel = prefPanelController.window {
+            self.view.window?.beginSheet(prefPanel, completionHandler: { response in
+                DispatchQueue.main.async(execute: {
+                    self.updatePreferences()
+                })
+            })
+        }
+    }
+    
+    func updatePreferences() {
+        
     }
 }
