@@ -17,13 +17,17 @@ class PrefViewController: NSViewController {
         registerDefaultPrefs()
         loadPref()
         setUI()
-        
+        let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString")
+        let build = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion")
+        versionChecker.stringValue +=  "\(version ?? "UNKNOWN") (\(build ?? "UNKNOWN"))"
     }
     
     weak var delegate: updatePrefDelegate?
     
     var currentStyle: titleStyle?
     var isSourceFont: Bool?
+    
+    var currentPage: displayPage = .general
     
     let userDefaults = UserDefaults.standard
     
@@ -34,6 +38,24 @@ class PrefViewController: NSViewController {
     @IBOutlet weak var radioButtonB: NSButton!
     @IBOutlet weak var radioButtonC: NSButton!
     @IBOutlet weak var sampleCell: NSImageView!
+    @IBOutlet weak var tabView: NSTabView!
+    @IBOutlet weak var versionChecker: NSTextField!
+    
+    static let layoutTable: [NSSize] = [
+        NSSize(width: 191, height: 197),
+        NSSize(width: 255, height: 270)
+    ]
+    
+    func setLayoutType(_ type: displayPage) {
+        let frame = self.view.window?.frame
+        if frame != nil {
+            let heightDelta = frame!.size.height - PrefViewController.layoutTable[type.rawValue].height
+            let origin = NSMakePoint(frame!.origin.x, frame!.origin.y + heightDelta)
+            let size = PrefViewController.layoutTable[type.rawValue]
+            let newFrame = NSRect(origin: origin, size: size)
+            self.view.window?.setFrame(newFrame, display: true, animate: true)
+        }
+    }
     
     fileprivate func registerDefaultPrefs() {
         let defaultPreferences: [String: Any] = [
@@ -119,12 +141,41 @@ class PrefViewController: NSViewController {
     @IBAction func Cancel(_ sender: NSButton) {
         self.view.window?.close()
     }
+    
+    func switchToDisplay() {
+        if currentPage == .display {
+            return
+        }
+        tabView.selectTabViewItem(at: displayPage.display.rawValue)
+        setLayoutType(.display)
+        currentPage = .display
+    }
+    
+    func switchToGeneral() {
+        if currentPage == .general {
+            return
+        }
+        tabView.selectTabViewItem(at: displayPage.general.rawValue)
+        setLayoutType(.general)
+        currentPage = .general
+    }
+    
+    @IBAction func goToReleases(_ sender: NSButton) {
+        if let url = URL(string: "https://github.com/yuxiqian/cai-yun/releases"), NSWorkspace.shared.open(url) {
+            // successfully opened
+        }
+    }
 }
 
 enum titleStyle: Int {
     case dark = 0
     case light = 1
     case transparent = 2
+}
+
+enum displayPage: Int {
+    case general = 0
+    case display = 1
 }
 
 
