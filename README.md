@@ -48,19 +48,17 @@
 
 ### Swift
 
-* [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
+* [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON), MIT License
 
-* [YapAnimator](https://github.com/yapstudios/YapAnimator)
+* [YapAnimator](https://github.com/yapstudios/YapAnimator), BSD 2-Clause "Simplified" License
 
-* [ESSProgressIndicatorCategory](https://github.com/eternalstorms/NSProgressIndicator-ESSProgressIndicatorCategory)
+* [ESSProgressIndicatorCategory](https://github.com/eternalstorms/NSProgressIndicator-ESSProgressIndicatorCategory), [Other License](https://github.com/eternalstorms/NSProgressIndicator-ESSProgressIndicatorCategory#first-the-license-agreement)
 
 ### Python
 
-* [requests](https://github.com/requests/requests)
+* [requests](https://github.com/requests/requests), Apache License
 
-* [lxml](https://github.com/lxml/lxml)
-
-* [PyYaml](https://pyyaml.org/)
+* [lxml](https://github.com/lxml/lxml), BSD license
 
 ## 色彩数据来自
 
