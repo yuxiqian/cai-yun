@@ -3,23 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2D0DDD9D8A433A1DEA572FAF9AB983A3 /* Pods-cai-yun-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 722812F2553B336C44C8CDE4AAE97816 /* Pods-cai-yun-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D92CAA0224C22FF7291CFB60A7A8C21 /* AnimatableLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DD847F2473E748E42197D4540F726 /* AnimatableLayer.swift */; };
-		35055E706C687BCB241148EB306E8A33 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
+		3EA47CC22BD25F7ACEE9A3BDE82BA1C6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AFE638F59E262D940905854A013372 /* Cocoa.framework */; };
 		5B4BF92B5F2434D748DCF122BB494556 /* YapAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428E003D34B56894F1AD05418A0180E /* YapAnimator.swift */; };
+		6A01D5687343BCDE813D87017111A67F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AFE638F59E262D940905854A013372 /* Cocoa.framework */; };
 		8CE7F5800A8B997E046214B06A594F6E /* Pods-cai-yun-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F294A08CD35088A74D0FAC772E6291 /* Pods-cai-yun-dummy.m */; };
-		92634067ABF786FCCB5242393229EC00 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
 		948ADEFD9DF0FCA2D12A48A5F82A9C83 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1CE5B89792BB48FAA5393932CFF62 /* SwiftyJSON.swift */; };
 		9A661A0DBCBE8E794AB1D4594623790F /* YapAnimator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1892D773429D0027E461A7E089A88D3 /* YapAnimator-dummy.m */; };
+		B75B5A8863708C769D5818D9B7853BEE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AFE638F59E262D940905854A013372 /* Cocoa.framework */; };
 		C155257C080720D422DBAB0AB76F7E5F /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7A586E76D203084836E753162E0E43 /* Animatable.swift */; };
 		C20661D046912754346A56877166E1D9 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DEE176B7F9BFF7C090BF46761FE4CE /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F41713523319C46904467822E305AF8C /* YapAnimator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D853682EEF9F8DEEF2813414C61C224 /* YapAnimator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F611F77092D7CA2D52DFB6F0083EEDC3 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E8C8FB5133A1FC9A3B4AF1C243A7C0 /* SwiftyJSON-dummy.m */; };
-		FF85309B1A6E9305A87454C2B040DEF2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,11 +65,11 @@
 		CE9C4AB6C504E2A46A6C518E7E9768C0 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		D1892D773429D0027E461A7E089A88D3 /* YapAnimator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YapAnimator-dummy.m"; sourceTree = "<group>"; };
 		DF0991D7E2716C839E2FCBDE51F10ADA /* YapAnimator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YapAnimator.modulemap; sourceTree = "<group>"; };
-		DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		E2DEE176B7F9BFF7C090BF46761FE4CE /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		E3F294A08CD35088A74D0FAC772E6291 /* Pods-cai-yun-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-cai-yun-dummy.m"; sourceTree = "<group>"; };
 		E521436820985EEA74DB938537B03D4F /* Pods-cai-yun-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-cai-yun-frameworks.sh"; sourceTree = "<group>"; };
 		ED7A586E76D203084836E753162E0E43 /* Animatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animatable.swift; path = Source/Animatable.swift; sourceTree = "<group>"; };
+		F2AFE638F59E262D940905854A013372 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		F428E003D34B56894F1AD05418A0180E /* YapAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YapAnimator.swift; path = Source/YapAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35055E706C687BCB241148EB306E8A33 /* Cocoa.framework in Frameworks */,
+				3EA47CC22BD25F7ACEE9A3BDE82BA1C6 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF85309B1A6E9305A87454C2B040DEF2 /* Cocoa.framework in Frameworks */,
+				6A01D5687343BCDE813D87017111A67F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92634067ABF786FCCB5242393229EC00 /* Cocoa.framework in Frameworks */,
+				B75B5A8863708C769D5818D9B7853BEE /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +140,7 @@
 		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA7AC8429882A95AA0810A9DCDED54FF /* OS X */,
+				E0A0F44171C587A61184070F950DD686 /* OS X */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -193,6 +193,14 @@
 			path = "Target Support Files/Pods-cai-yun";
 			sourceTree = "<group>";
 		};
+		E0A0F44171C587A61184070F950DD686 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				F2AFE638F59E262D940905854A013372 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
 		F57A668DE64B0B82F6D72C0EEB4296EF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,14 +213,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/YapAnimator";
-			sourceTree = "<group>";
-		};
-		FA7AC8429882A95AA0810A9DCDED54FF /* OS X */ = {
-			isa = PBXGroup;
-			children = (
-				DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */,
-			);
-			name = "OS X";
 			sourceTree = "<group>";
 		};
 		FDF7B4C102040B75F6069480948EDC67 /* Targets Support Files */ = {
@@ -408,123 +408,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		21541B7E5E9C14E8089B97221E3EC5DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 544B6B8B28E3954F9F194B48427CF9C2 /* Pods-cai-yun.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-cai-yun/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MODULEMAP_FILE = "Target Support Files/Pods-cai-yun/Pods-cai-yun.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9766C89E1142B3293893027A2715646E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5890D4BBCEFF886CF248F8FCEEAC3EF0 /* YapAnimator.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/YapAnimator/YapAnimator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YapAnimator/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/YapAnimator/YapAnimator.modulemap";
-				PRODUCT_MODULE_NAME = YapAnimator;
-				PRODUCT_NAME = YapAnimator;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A9EEAEDAF3D73CFFB288E7F43D05DAF9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5890D4BBCEFF886CF248F8FCEEAC3EF0 /* YapAnimator.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/YapAnimator/YapAnimator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YapAnimator/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/YapAnimator/YapAnimator.modulemap";
-				PRODUCT_MODULE_NAME = YapAnimator;
-				PRODUCT_NAME = YapAnimator;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C14363075AB5B62A9173AF90CF400F5B /* Debug */ = {
+		02206A39950AB264474BF72228F5C23F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -584,11 +468,147 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		C1ECCF52DC1F978B7F32EC3AD6AE9B93 /* Release */ = {
+		27329D7D04A1A28A05898B0CF86B4A5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 544B6B8B28E3954F9F194B48427CF9C2 /* Pods-cai-yun.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-cai-yun/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-cai-yun/Pods-cai-yun.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3CBD6F3B69C98F9127F8C1591832551E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 871A978CE03B3D35C45280BDBBDE096E /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3CE4D5C73C4188E6B349F1D7AC6C305D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5890D4BBCEFF886CF248F8FCEEAC3EF0 /* YapAnimator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/YapAnimator/YapAnimator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YapAnimator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/YapAnimator/YapAnimator.modulemap";
+				PRODUCT_MODULE_NAME = YapAnimator;
+				PRODUCT_NAME = YapAnimator;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E84A6BDD2CE7B289E1D8D3BC58DF70C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B568C4369748C404612DDD717860BF11 /* Pods-cai-yun.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-cai-yun/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-cai-yun/Pods-cai-yun.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		62FE7660C9BFFBB21FA80BED50834E37 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -643,11 +663,14 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		C5624DD8B0EFAFB4C03FF6AF411499DF /* Release */ = {
+		B7218AD45F4B12BA36DF8E49F14AD0B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 871A978CE03B3D35C45280BDBBDE096E /* SwiftyJSON.xcconfig */;
 			buildSettings = {
@@ -665,11 +688,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
 				PRODUCT_MODULE_NAME = SwiftyJSON;
@@ -677,91 +696,43 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D46D641BBAF47346CEE4ED64D0709156 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5890D4BBCEFF886CF248F8FCEEAC3EF0 /* YapAnimator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/YapAnimator/YapAnimator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YapAnimator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/YapAnimator/YapAnimator.modulemap";
+				PRODUCT_MODULE_NAME = YapAnimator;
+				PRODUCT_NAME = YapAnimator;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		D4C0DECDB49A834784710540C59B7C8A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 871A978CE03B3D35C45280BDBBDE096E /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyJSON;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F41FAA63F54CF7F171F286B939A335CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B568C4369748C404612DDD717860BF11 /* Pods-cai-yun.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-cai-yun/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MODULEMAP_FILE = "Target Support Files/Pods-cai-yun/Pods-cai-yun.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -769,8 +740,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C14363075AB5B62A9173AF90CF400F5B /* Debug */,
-				C1ECCF52DC1F978B7F32EC3AD6AE9B93 /* Release */,
+				02206A39950AB264474BF72228F5C23F /* Debug */,
+				62FE7660C9BFFBB21FA80BED50834E37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -778,8 +749,8 @@
 		7A1677361E38E0E5D0F1C11EEB98D1E3 /* Build configuration list for PBXNativeTarget "Pods-cai-yun" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F41FAA63F54CF7F171F286B939A335CF /* Debug */,
-				21541B7E5E9C14E8089B97221E3EC5DF /* Release */,
+				5E84A6BDD2CE7B289E1D8D3BC58DF70C /* Debug */,
+				27329D7D04A1A28A05898B0CF86B4A5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -787,8 +758,8 @@
 		E43BF36C6B7F9606501A8935BFE9C590 /* Build configuration list for PBXNativeTarget "YapAnimator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A9EEAEDAF3D73CFFB288E7F43D05DAF9 /* Debug */,
-				9766C89E1142B3293893027A2715646E /* Release */,
+				3CE4D5C73C4188E6B349F1D7AC6C305D /* Debug */,
+				D46D641BBAF47346CEE4ED64D0709156 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -796,8 +767,8 @@
 		F2CB7CCC092B2B418B627D0ADAC7EC31 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4C0DECDB49A834784710540C59B7C8A /* Debug */,
-				C5624DD8B0EFAFB4C03FF6AF411499DF /* Release */,
+				B7218AD45F4B12BA36DF8E49F14AD0B0 /* Debug */,
+				3CBD6F3B69C98F9127F8C1591832551E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

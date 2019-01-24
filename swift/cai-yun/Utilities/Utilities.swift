@@ -13,7 +13,10 @@ func getRandom(_ min: Int, _ max: Int) -> Int {
     return min + Int(arc4random_uniform(UInt32(max - min + 1)))
 }
 
-func getFont(_ points: Points) -> NSFont? {
+func getFont(_ points: Points, _ fallback: Bool) -> NSFont? {
+    if fallback {
+        return NSFont(name: "PingFangSC-Regular", size: CGFloat(points.rawValue))
+    }
     return NSFont(name: "SourceHanSerifCN-Light", size: CGFloat(points.rawValue))
 }
 
@@ -30,16 +33,18 @@ func Max(_ i: Double, _ j: Double) -> Double {
 }
 
 func suitableColor(_ int: Int) -> CGFloat {
-    if #available(OSX 10.14, *) {
-        let appear = NSApplication.shared.effectiveAppearance
-        if appear.name == .aqua {
-            return (pow(CGFloat(int) / 255.0, 2.0) * 0.5 + 0.5)
+    /*
+        if #available(OSX 10.14, *) {
+            let appear = NSApplication.shared.effectiveAppearance
+            if appear.name == .aqua {
+                return (pow(CGFloat(int) / 255.0, 2.0) * 0.5 + 0.5)
+            } else {
+                return (pow(CGFloat(int) / 255.0, 2.0) * 0.5)
+            }
         } else {
-            return (pow(CGFloat(int) / 255.0, 2.0) * 0.5)
-        }
-    } else {
+     */
         return (pow(CGFloat(int) / 255.0, 2.0) * 0.5 + 0.5)
-    }
+    /* } */
 }
 
 

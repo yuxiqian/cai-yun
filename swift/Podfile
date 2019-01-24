@@ -1,4 +1,3 @@
-
 platform :macos, '10.12'
 
 target 'cai-yun' do

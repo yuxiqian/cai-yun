@@ -3,16 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8A1F0213216256E70015650F /* AcknowledgementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F0212216256E70015650F /* AcknowledgementsViewController.swift */; };
+		8A359E5121757175000677DC /* TransparentWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A359E5021757175000677DC /* TransparentWindowController.swift */; };
 		8A54409A2163178500BF3E6A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5440992163178500BF3E6A /* SwiftyJSON.framework */; };
 		8A5781AE21610BBD005BABE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5781AD21610BBD005BABE1 /* AppDelegate.swift */; };
 		8A5781B021610BBD005BABE1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5781AF21610BBD005BABE1 /* MainViewController.swift */; };
 		8A5781B221610BBE005BABE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A5781B121610BBE005BABE1 /* Assets.xcassets */; };
 		8A5781B521610BBE005BABE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5781B321610BBE005BABE1 /* Main.storyboard */; };
+		8A644818219EF9C7006EAA7E /* DarkLightProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A644817219EF9C7006EAA7E /* DarkLightProgressIndicator.swift */; };
 		8A85EA452170DD0B005B5766 /* github_colors.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A85EA442170DD0B005B5766 /* github_colors.json */; };
 		8A85EA462170DD13005B5766 /* github_colors.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A85EA442170DD0B005B5766 /* github_colors.json */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8A929A9B2161C78B00179F65 /* ResourceReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A929A9A2161C78B00179F65 /* ResourceReader.swift */; };
@@ -22,6 +24,13 @@
 		8A94EF442161B8C900BE4355 /* chinese_colors.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A94EF422161B8C900BE4355 /* chinese_colors.json */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8A9662402161E3E2005B5995 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A96623F2161E3E2005B5995 /* Utilities.swift */; };
 		8A9662432161E882005B5995 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9662422161E882005B5995 /* Constants.swift */; };
+		8AA8848621A7CE0D0008D12C /* PrefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA8848521A7CE0D0008D12C /* PrefViewController.swift */; };
+		8AAF101521A7FC38003ECE2D /* dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AAF101221A7FC38003ECE2D /* dark.png */; };
+		8AAF101621A7FC38003ECE2D /* light.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AAF101321A7FC38003ECE2D /* light.png */; };
+		8AAF101721A7FC38003ECE2D /* transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AAF101421A7FC38003ECE2D /* transparent.png */; };
+		8AAF101821A7FC52003ECE2D /* dark.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AAF101221A7FC38003ECE2D /* dark.png */; };
+		8AAF101921A7FC52003ECE2D /* light.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AAF101321A7FC38003ECE2D /* light.png */; };
+		8AAF101A21A7FC52003ECE2D /* transparent.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AAF101421A7FC38003ECE2D /* transparent.png */; };
 		8AB96EE921631B2800629C67 /* YapAnimator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB96EE821631B2800629C67 /* YapAnimator.framework */; };
 		8AC43F642162F57600FE06B9 /* metro_line_colors.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AC43F632162F57600FE06B9 /* metro_line_colors.json */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8AD3CB2B2163747F00360D3B /* NSProgressIndicator+ESSProgressIndicatorCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD3CB2A2163747F00360D3B /* NSProgressIndicator+ESSProgressIndicatorCategory.m */; };
@@ -36,6 +45,9 @@
 			dstPath = resources;
 			dstSubfolderSpec = 7;
 			files = (
+				8AAF101821A7FC52003ECE2D /* dark.png in CopyFiles */,
+				8AAF101921A7FC52003ECE2D /* light.png in CopyFiles */,
+				8AAF101A21A7FC52003ECE2D /* transparent.png in CopyFiles */,
 				8A85EA462170DD13005B5766 /* github_colors.json in CopyFiles */,
 				8AC43F642162F57600FE06B9 /* metro_line_colors.json in CopyFiles */,
 				8A94EF432161B8C900BE4355 /* nippon_colors.json in CopyFiles */,
@@ -51,6 +63,7 @@
 		3F02EF200F5924A7949076B1 /* Pods-cai-yun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cai-yun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cai-yun/Pods-cai-yun.debug.xcconfig"; sourceTree = "<group>"; };
 		8A1F020B21624C540015650F /* cai-yun-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cai-yun-Bridging-Header.h"; sourceTree = "<group>"; };
 		8A1F0212216256E70015650F /* AcknowledgementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgementsViewController.swift; sourceTree = "<group>"; };
+		8A359E5021757175000677DC /* TransparentWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentWindowController.swift; sourceTree = "<group>"; };
 		8A5440992163178500BF3E6A /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5781AA21610BBD005BABE1 /* cai-yun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cai-yun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5781AD21610BBD005BABE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +71,7 @@
 		8A5781B121610BBE005BABE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A5781B421610BBE005BABE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A5781B621610BBE005BABE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A644817219EF9C7006EAA7E /* DarkLightProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkLightProgressIndicator.swift; sourceTree = "<group>"; };
 		8A85EA442170DD0B005B5766 /* github_colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = github_colors.json; path = ../palette/github_colors.json; sourceTree = "<group>"; };
 		8A929A9A2161C78B00179F65 /* ResourceReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceReader.swift; sourceTree = "<group>"; };
 		8A929A9C2161C8AA00179F65 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -67,6 +81,11 @@
 		8A94EF422161B8C900BE4355 /* chinese_colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = chinese_colors.json; path = ../palette/chinese_colors.json; sourceTree = "<group>"; };
 		8A96623F2161E3E2005B5995 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		8A9662422161E882005B5995 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8AA8848521A7CE0D0008D12C /* PrefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefViewController.swift; sourceTree = "<group>"; };
+		8AACE45A21A7D6320076A5EB /* DefaultsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DefaultsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AAF101221A7FC38003ECE2D /* dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dark.png; sourceTree = "<group>"; };
+		8AAF101321A7FC38003ECE2D /* light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light.png; sourceTree = "<group>"; };
+		8AAF101421A7FC38003ECE2D /* transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparent.png; sourceTree = "<group>"; };
 		8AB96EE821631B2800629C67 /* YapAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YapAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC43F632162F57600FE06B9 /* metro_line_colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = metro_line_colors.json; path = ../palette/metro_line_colors.json; sourceTree = "<group>"; };
 		8AD3CB292163747F00360D3B /* NSProgressIndicator+ESSProgressIndicatorCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSProgressIndicator+ESSProgressIndicatorCategory.h"; sourceTree = "<group>"; };
@@ -137,6 +156,7 @@
 				8A929AA12161C9DB00179F65 /* cai-yun.entitlements */,
 				8A5781B621610BBE005BABE1 /* Info.plist */,
 				8A5781B121610BBE005BABE1 /* Assets.xcassets */,
+				8AAF101121A7FBED003ECE2D /* Resources */,
 				8A929A9F2161C8BC00179F65 /* Storyboards */,
 				8A1F020A21624C400015650F /* Animator */,
 				8A929AA02161C8C900179F65 /* Palette */,
@@ -153,6 +173,9 @@
 				8A5781AF21610BBD005BABE1 /* MainViewController.swift */,
 				8A1F0212216256E70015650F /* AcknowledgementsViewController.swift */,
 				8AD4964E2163B111009C1B6B /* AboutViewController.swift */,
+				8A359E5021757175000677DC /* TransparentWindowController.swift */,
+				8A644817219EF9C7006EAA7E /* DarkLightProgressIndicator.swift */,
+				8AA8848521A7CE0D0008D12C /* PrefViewController.swift */,
 			);
 			path = VIewController;
 			sourceTree = "<group>";
@@ -183,9 +206,20 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		8AAF101121A7FBED003ECE2D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8AAF101221A7FC38003ECE2D /* dark.png */,
+				8AAF101321A7FC38003ECE2D /* light.png */,
+				8AAF101421A7FC38003ECE2D /* transparent.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		D126BC9308B1364D1A49119A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8AACE45A21A7D6320076A5EB /* DefaultsKit.framework */,
 				8AB96EE821631B2800629C67 /* YapAnimator.framework */,
 				8A5440992163178500BF3E6A /* SwiftyJSON.framework */,
 				B8CBBB71A072EA54C18DE9DF /* Pods_cai_yun.framework */,
@@ -229,6 +263,7 @@
 					8A5781A921610BBD005BABE1 = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
 								enabled = 0;
@@ -241,7 +276,7 @@
 				};
 			};
 			buildConfigurationList = 8A5781A521610BBD005BABE1 /* Build configuration list for PBXProject "cai-yun" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -263,7 +298,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AAF101721A7FC38003ECE2D /* transparent.png in Resources */,
+				8AAF101621A7FC38003ECE2D /* light.png in Resources */,
 				8A5781B221610BBE005BABE1 /* Assets.xcassets in Resources */,
+				8AAF101521A7FC38003ECE2D /* dark.png in Resources */,
 				8A5781B521610BBE005BABE1 /* Main.storyboard in Resources */,
 				8A85EA452170DD0B005B5766 /* github_colors.json in Resources */,
 			);
@@ -277,15 +315,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-cai-yun-checkManifestLockResult.txt",
 			);
@@ -299,16 +333,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-cai-yun/Pods-cai-yun-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/YapAnimator/YapAnimator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YapAnimator.framework",
@@ -332,8 +362,11 @@
 				8A9662402161E3E2005B5995 /* Utilities.swift in Sources */,
 				8A1F0213216256E70015650F /* AcknowledgementsViewController.swift in Sources */,
 				8A5781AE21610BBD005BABE1 /* AppDelegate.swift in Sources */,
+				8A644818219EF9C7006EAA7E /* DarkLightProgressIndicator.swift in Sources */,
 				8AD3CB2B2163747F00360D3B /* NSProgressIndicator+ESSProgressIndicatorCategory.m in Sources */,
+				8A359E5121757175000677DC /* TransparentWindowController.swift in Sources */,
 				8A9662432161E882005B5995 /* Constants.swift in Sources */,
+				8AA8848621A7CE0D0008D12C /* PrefViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -457,12 +490,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -472,23 +504,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "cai-yun/cai-yun.entitlements";
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 24XARD42BP;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "cai-yun/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "yuxiqian.cai-yun";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "cai-yun/Animator/cai-yun-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -498,22 +527,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "cai-yun/cai-yun.entitlements";
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 24XARD42BP;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "cai-yun/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "yuxiqian.cai-yun";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "cai-yun/Animator/cai-yun-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

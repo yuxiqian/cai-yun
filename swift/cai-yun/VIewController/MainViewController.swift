@@ -11,7 +11,8 @@ import YapAnimator
 
 import SwiftyJSON
 
-class MainViewController: NSViewController {
+
+class MainViewController: NSViewController, updatePrefDelegate {
     
     var palettes = [String: [Color]]()
     var currentPalette: [Color] = []
@@ -23,11 +24,14 @@ class MainViewController: NSViewController {
     var moreMenu = NSMenu()
     var paletteMenu = NSMenu()
     
+    var titleTheme: titleStyle = .transparent
+    
+    let userDefaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
-        self.view.window?.isMovableByWindowBackground = true
         
         self.titleShadowBar.wantsLayer = true
         
@@ -57,6 +61,8 @@ class MainViewController: NSViewController {
         
         loadPalette()
         
+        updatePreference()
+        
     }
 
     override var representedObject: Any? {
@@ -84,18 +90,13 @@ class MainViewController: NSViewController {
     }
     
     override func viewWillLayout() {
-
-        
-        self.titleShadowBar.layer?.backgroundColor = self.currentColor!.getTitleBarColor()
-
-        
+        setColorDisplay()
         updateConstraints()
-        
-        
     }
     
     
     @IBOutlet weak var titleShadowBar: NSImageView!
+    @IBOutlet weak var titleText: NSTextField!
     @IBOutlet weak var mainNameTitle: NSTextField!
     @IBOutlet weak var aliasNameTitle: NSTextField!
     
@@ -369,9 +370,9 @@ class MainViewController: NSViewController {
         self.isNextTap = false
     }
     
-    func setFont() {
-        self.mainNameTitle.font = getFont(.mainName)
-        self.aliasNameTitle.font = getFont(.aliasName)
+    func setFont(_ fallback: Bool = false) {
+        self.mainNameTitle.font = getFont(.mainName, fallback)
+        self.aliasNameTitle.font = getFont(.aliasName, fallback)
     }
     
     
@@ -416,6 +417,7 @@ class MainViewController: NSViewController {
             self.moreMenu.item(at: 5)?.title = (self.currentColor?.getHSLString())!
             self.moreMenu.item(at: 6)?.title = "拷贝十六进制表示： \(self.currentColor?.getHexString() ?? "未知")"
             
+            /*
             if #available(OSX 10.14, *) {
                 if self.currentColor!.shouldShowDark() {
                     self.ringOne.appearance = NSAppearance(named: .darkAqua)
@@ -428,6 +430,25 @@ class MainViewController: NSViewController {
                     self.ringThree.appearance = NSAppearance(named: .aqua)
                     self.ringFour.appearance = NSAppearance(named: .aqua)
                 }
+            }
+            */
+            
+            if self.currentColor!.shouldShowDark() {
+                self.ringOne.switchDark()
+                self.ringTwo.switchDark()
+                self.ringThree.switchDark()
+                self.ringFour.switchDark()
+//                self.ringTwo.appearance = NSAppearance(named: .darkAqua)
+//                self.ringThree.appearance = NSAppearance(named: .darkAqua)
+//                self.ringFour.appearance = NSAppearance(named: .darkAqua)
+            } else {
+                self.ringOne.switchLight()
+                self.ringTwo.switchLight()
+                self.ringThree.switchLight()
+                self.ringFour.switchLight()
+//                self.ringTwo.appearance = NSAppearance(named: .aqua)
+//                self.ringThree.appearance = NSAppearance(named: .aqua)
+//                self.ringFour.appearance = NSAppearance(named: .aqua)
             }
             
             if isRGBAndNotCMYK {
@@ -472,14 +493,23 @@ class MainViewController: NSViewController {
             
             self.imageWrapper.animated?.opacity.animate(to: 0.0)
 
-            
-//
-            
-//            self.titleShadowBar.animated?.backgroundColor.animate(to: self.currentColor!.getAccentColor())
-//
-            self.titleShadowBar.layer?.backgroundColor = self.currentColor!.getTitleBarColor()
-//            self.titleShadowBar.image = self.currentColor!.getTitleImage(width: Int(self.view.frame.width), height: 20)
-            
+            updateTitleColor()
+
+        }
+    }
+    
+    func updateTitleColor() {
+        self.titleShadowBar.layer?.backgroundColor = getTitleBarColor(titleTheme).cgColor
+        switch titleTheme {
+        case .transparent:
+            titleText.textColor = currentColor?.getTextColor()
+            break
+        case .dark:
+            titleText.textColor = NSColor.white
+            break
+        case .light:
+            titleText.textColor = NSColor.black
+            break
         }
     }
     
@@ -533,4 +563,37 @@ class MainViewController: NSViewController {
             moreMenu.item(at: 4)?.isHidden = false
         }
     }
+    
+    @IBAction func openPreferencePanel(_ sender: Any) {
+        let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
+        let prefPanelController = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("Preference Panel Controller")) as! NSWindowController
+        
+        if let prefPanel = prefPanelController.window {
+            let prefViewCon = prefPanel.contentViewController as! PrefViewController
+            prefViewCon.delegate = self
+            self.view.window?.beginSheet(prefPanel, completionHandler: nil)
+        }
+    }
+    
+    func updatePreference() {
+        NSLog("call pref update")
+        let styleID = userDefaults.integer(forKey: PreferenceKey.titleStyleTheme)
+        let style = titleStyle(rawValue: styleID)
+
+        let isSourceFont = userDefaults.bool(forKey: PreferenceKey.useSourceFont)
+        
+        if isSourceFont {
+            setFont()
+        } else {
+            setFont(true)
+            NSLog("set fallback font")
+        }
+        titleTheme = style!
+        updateTitleColor()
+    }
+}
+
+
+protocol updatePrefDelegate: NSObjectProtocol {
+    func updatePreference() -> ()
 }
