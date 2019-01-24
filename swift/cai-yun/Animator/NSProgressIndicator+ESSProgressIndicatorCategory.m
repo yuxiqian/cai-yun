@@ -151,10 +151,10 @@ static ESSProgressBarAnimation *animD = nil;
     
     if (expectValue < self.progInd.minValue + 1) {
         expectValue = self.progInd.minValue;
-        printf("triggered to the min\n");
+//        printf("triggered to the min\n");
     } else if ( expectValue > self.progInd.maxValue - 1 ){
         expectValue = self.progInd.maxValue;
-        printf("triggered to the max\n");
+//        printf("triggered to the max\n");
     }
 	
     self.progInd.doubleValue = expectValue;
@@ -163,13 +163,13 @@ static ESSProgressBarAnimation *animD = nil;
     
 //    printf("Now, progInd.doubleValue = %f, min = %f, max = %f)", self.progInd.doubleValue, self.progInd.minValue, self.progInd.maxValue);
 
-    printf("Now, progInd.doubleValue = %f, min = %f, max = %f)\n", self.progInd.doubleValue, self.progInd.minValue, self.progInd.maxValue);
+//    printf("Now, progInd.doubleValue = %f, min = %f, max = %f)\n", self.progInd.doubleValue, self.progInd.minValue, self.progInd.maxValue);
     
-    printf("---------------------------------\n");
+//    printf("---------------------------------\n");
     
 	
     if (currentProgress == 1.0 && [self.progInd respondsToSelector:@selector(animationDealloc)]) {
-        printf("called end info.\n");
+//        printf("called end info.\n");
         [self.progInd animationDealloc];
         
     }

@@ -38,7 +38,6 @@ class PrefViewController: NSViewController {
     @IBOutlet weak var radioButtonB: NSButton!
     @IBOutlet weak var radioButtonC: NSButton!
     @IBOutlet weak var sampleCell: NSImageView!
-    @IBOutlet weak var tabView: NSTabView!
     @IBOutlet weak var versionChecker: NSTextField!
     
     static let layoutTable: [NSSize] = [
@@ -142,23 +141,6 @@ class PrefViewController: NSViewController {
         self.view.window?.close()
     }
     
-    func switchToDisplay() {
-        if currentPage == .display {
-            return
-        }
-        tabView.selectTabViewItem(at: displayPage.display.rawValue)
-        setLayoutType(.display)
-        currentPage = .display
-    }
-    
-    func switchToGeneral() {
-        if currentPage == .general {
-            return
-        }
-        tabView.selectTabViewItem(at: displayPage.general.rawValue)
-        setLayoutType(.general)
-        currentPage = .general
-    }
     
     @IBAction func goToReleases(_ sender: NSButton) {
         if let url = URL(string: "https://github.com/yuxiqian/cai-yun/releases"), NSWorkspace.shared.open(url) {
