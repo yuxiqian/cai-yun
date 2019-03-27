@@ -78,4 +78,4 @@
 
 ## 包含字体
 
-此 App 包含 ["思源宋体"](https://github.com/adobe-fonts/source-han-serif) 字形文件。 
+此 App 包含 ["思源宋体"](https://github.com/adobe-fonts/source-han-serif) 字体文件。 
