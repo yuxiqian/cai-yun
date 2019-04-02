@@ -58,7 +58,9 @@
 
 * [requests](https://github.com/requests/requests), Apache License
 
-* [lxml](https://github.com/lxml/lxml), BSD license
+* [lxml](https://github.com/lxml/lxml), BSD License
+
+* [github-colors](https://github.com/ozh/github-colors), WTFP License
 
 ## 色彩数据来自
 
