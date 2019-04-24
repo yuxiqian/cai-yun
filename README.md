@@ -79,4 +79,4 @@
 * [香港鐵路有限公司](http://www.mtr.com.hk/)
 
 ## 包含字体
-["思源宋体"](https://github.com/adobe-fonts/source-han-serif), OFL-1.1
+["思源宋体"](https://github.com/adobe-fonts/source-han-serif), OFL-1.1 License
