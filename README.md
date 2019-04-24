@@ -79,5 +79,4 @@
 * [香港鐵路有限公司](http://www.mtr.com.hk/)
 
 ## 包含字体
-
-此 App 包含 ["思源宋体"](https://github.com/adobe-fonts/source-han-serif) 字体文件。 
+["思源宋体"](https://github.com/adobe-fonts/source-han-serif), OFL-1.1
